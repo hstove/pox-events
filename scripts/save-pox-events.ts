@@ -1,20 +1,19 @@
-import { smartContractsApi } from '../src/api';
+import { NETWORK_KEY, poxContractId, smartContractsApi } from "../src/api";
 import {
   TransactionEvent,
   TransactionEventSmartContractLog,
-} from '@stacks/stacks-blockchain-api-types';
-import { writeFile } from 'fs/promises';
-import { CachedPrint } from './pox-types';
+} from "@stacks/stacks-blockchain-api-types";
+import { mkdir, writeFile } from "fs/promises";
+import { CachedPrint } from "../src/pox-types";
+import { saveTransactions } from "../src/transactions";
+import { join } from "path";
+import { sleep } from "../src/utils";
 
 export const limit = 50;
 
-export async function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
 export async function fetchPoxEvents(offset?: number) {
   const response = (await smartContractsApi.getContractEventsById({
-    contractId: 'ST000000000000000000002AMW42H.pox-4',
+    contractId: poxContractId,
     limit,
     offset,
   })) as {
@@ -22,8 +21,6 @@ export async function fetchPoxEvents(offset?: number) {
     total: number;
   };
   const { results, ...rest } = response;
-  // console.log(rest);
-  // console.log(`Total: ${response.total}, Offset: ${offset}`);
   return response;
 }
 
@@ -36,17 +33,20 @@ async function run() {
     lastEventsLength = events.results.length;
     offset += limit;
     events.results.forEach((event: TransactionEvent) => {
-      if (event.event_type !== 'smart_contract_log') return;
+      if (event.event_type !== "smart_contract_log") return;
       const hex = event.contract_log.value.hex;
       eventsHex.push({
         hex,
-        
+        txid: event.tx_id,
       });
     });
     console.log(`Offset: ${offset}, Total: ${eventsHex.length}`);
     await sleep(1000);
   }
-  await writeFile('pox-events.json', JSON.stringify(eventsHex));
+  const dataDir = join("data", NETWORK_KEY);
+  await mkdir(dataDir, { recursive: true });
+  await writeFile(join(dataDir, "pox-events.json"), JSON.stringify(eventsHex));
+  await saveTransactions(eventsHex.map((event) => event.txid));
 }
 
 run()
