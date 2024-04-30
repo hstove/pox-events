@@ -7,7 +7,7 @@ on:
 
 jobs:
   run_scripts:
-    name: Code checks
+    name: Run Data Scripts
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
