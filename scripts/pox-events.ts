@@ -16,7 +16,7 @@ import { dataFolder, fetchTransaction } from "../src/transactions";
 import { Transaction } from "@stacks/stacks-blockchain-api-types";
 import { join } from "path";
 import { NETWORK_KEY } from "../src/api";
-import { loadEvents, saveCsv } from "../src/utils";
+import { dateToString, loadEvents, saveCsv } from "../src/utils";
 
 async function debug() {
   const events = await loadEvents();
@@ -103,9 +103,7 @@ async function run() {
     "Signer Key": account.signerKey,
     Amount: account.amount.toString(),
     Txid: account.txid,
-    Time: new Date(account.tx.burn_block_time_iso)
-      .toLocaleString()
-      .replaceAll(",", ""),
+    Time: dateToString(account.tx.burn_block_time_iso),
   }));
   const csv = await saveCsv(csvData, `commit-events.csv`);
   console.log(csv);

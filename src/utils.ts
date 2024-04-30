@@ -47,3 +47,9 @@ export async function saveCsv(
   await writeFile(join(dataFolder(), filename), csv, "utf-8");
   return csv;
 }
+
+export function dateToString(dateIso: string) {
+  return new Date(dateIso)
+    .toLocaleString("en-US", { timeZone: "America/New_York" })
+    .replaceAll(",", "");
+}

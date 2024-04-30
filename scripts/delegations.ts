@@ -9,7 +9,7 @@ import { dataFolder, fetchTransaction } from "../src/transactions";
 import { Transaction } from "@stacks/stacks-blockchain-api-types";
 import { join } from "path";
 import { NETWORK_KEY } from "../src/api";
-import { loadEvents, saveCsv } from "../src/utils";
+import { dateToString, loadEvents, saveCsv } from "../src/utils";
 import { DelegateStx } from "../src/pox-types";
 
 async function debug() {
@@ -44,9 +44,7 @@ async function run() {
         Stacker: print.stacker,
         Amount: min(print.data.amountUstx, print.balance).toString(),
         Txid: txid,
-        Date: new Date(tx.burn_block_time_iso)
-          .toLocaleString()
-          .replaceAll(",", ""),
+        Date: dateToString(tx.burn_block_time_iso),
       });
     }
   }
