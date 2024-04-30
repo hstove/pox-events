@@ -16,7 +16,7 @@ import { dataFolder, fetchTransaction } from "../src/transactions";
 import { Transaction } from "@stacks/stacks-blockchain-api-types";
 import { join } from "path";
 import { NETWORK_KEY } from "../src/api";
-import { loadEvents } from "../src/utils";
+import { loadEvents, saveCsv } from "../src/utils";
 
 async function debug() {
   const events = await loadEvents();
@@ -95,22 +95,20 @@ async function run() {
     }
   });
   console.log(`Stacked accounts: ${stackedAccounts.length}`);
-  stackedAccounts.forEach((account) => {
-    console.log(
-      [
-        account.type,
-        account.address,
-        account.delegator,
-        account.btcAddr,
-        account.signerKey,
-        account.amount.toString(),
-        account.txid,
-        new Date(account.tx.burn_block_time_iso)
-          .toLocaleString()
-          .replaceAll(",", ""),
-      ].join(",")
-    );
-  });
+  const csvData = stackedAccounts.map((account) => ({
+    Type: account.type,
+    Address: account.address,
+    Delegator: account.delegator,
+    "BTC Address": account.btcAddr,
+    "Signer Key": account.signerKey,
+    Amount: account.amount.toString(),
+    Txid: account.txid,
+    Time: new Date(account.tx.burn_block_time_iso)
+      .toLocaleString()
+      .replaceAll(",", ""),
+  }));
+  const csv = await saveCsv(csvData, `commit-events.csv`);
+  console.log(csv);
 }
 
 run()

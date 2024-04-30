@@ -1,0 +1,36 @@
+name: Run update
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+
+jobs:
+  run_scripts:
+    name: Code checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 9.0.6
+      - name: Set Node Version
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.19.0
+          cache: "pnpm"
+      - name: Install dependencies
+        run: pnpm install
+      - name: Update transactions
+        run: pnpm mainnet:save-events
+      - name: List commits
+        run: pnpm mainnet:list-events
+      - name: Get reward set
+        run: pnpm mainnet:reward-set
+      - name: Delegations
+        run: pnpm mainnet:delegations
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
