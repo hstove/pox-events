@@ -5,9 +5,15 @@
   "main": "index.ts",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "save-events": "tsx save-pox-events.ts",
-    "list-events": "tsx pox-events.ts"
+    "r": "STX_NETWORK=\"mainnet\" tsx",
+    "mainnet:save-events": "STX_NETWORK=\"mainnet\" tsx scripts/save-pox-events.ts",
+    "mainnet:list-events": "STX_NETWORK=\"mainnet\" tsx scripts/pox-events.ts",
+    "mainnet:reward-set": "STX_NETWORK=\"mainnet\" tsx scripts/reward-set.ts",
+    "mainnet:delegations": "STX_NETWORK=\"mainnet\" tsx scripts/delegations.ts",
+    "testnet:save-events": "STX_NETWORK=\"testnet\" tsx scripts/save-pox-events.ts",
+    "testnet:list-events": "STX_NETWORK=\"testnet\" tsx scripts/pox-events.ts",
+    "testnet:reward-set": "STX_NETWORK=\"testnet\" tsx scripts/reward-set.ts",
+    "testnet:delegations": "STX_NETWORK=\"testnet\" tsx scripts/delegations.ts"
   },
   "author": "",
   "license": "ISC",
@@ -20,10 +26,13 @@
     "@stacks/stacking": "^6.13.2",
     "@stacks/stacks-blockchain-api-types": "^7.10.0",
     "@stacks/transactions": "^6.13.1",
+    "google-auth-library": "^9.9.0",
+    "google-spreadsheet": "^4.1.1",
     "node-fetch": "^3.3.1"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
-    "tsx": "^4.7.2"
+    "tsx": "^4.7.2",
+    "typescript": "5.5.0-beta"
   }
 }

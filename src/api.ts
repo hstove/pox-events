@@ -9,7 +9,9 @@ import {
 } from "@stacks/blockchain-api-client";
 
 export const NETWORK_KEY_ENV = "STX_NETWORK";
-export const NETWORK_KEY = process.env[NETWORK_KEY_ENV] ?? "mainnet";
+export const NETWORK_KEY = (process.env[NETWORK_KEY_ENV] ?? "mainnet") as
+  | "mainnet"
+  | "testnet";
 export const apiUrl =
   NETWORK_KEY === "testnet"
     ? "https://api.testnet.hiro.so"

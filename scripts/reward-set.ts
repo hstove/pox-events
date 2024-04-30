@@ -3,7 +3,7 @@ import { getRewardCycleAddresses, listRewardAddresses } from "../src/pox";
 
 async function run() {
   const poxInfo = await getPoxInfo();
-  console.log("poxInfo", poxInfo);
+  // console.log("poxInfo", poxInfo);
   const nextCycle = poxInfo.next_cycle.id;
   console.log(`Next cycle: ${nextCycle}`);
   const addresses = await getRewardCycleAddresses(nextCycle);

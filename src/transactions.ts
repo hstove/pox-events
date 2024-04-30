@@ -1,16 +1,33 @@
-import { transactionsApi } from "./api";
+import { NETWORK_KEY, transactionsApi } from "./api";
 import { join } from "path";
 import { Transaction } from "@stacks/stacks-blockchain-api-types";
-import { readFile, writeFile, mkdir } from "fs/promises";
+import { readFile, writeFile, mkdir, stat } from "fs/promises";
 
 export function transactionPath(txid: string) {
-  return join("data", "transactions", `${txid}.json`);
+  return join(transactionsFolder(), `${txid}.json`);
+}
+
+export async function fileExists(filename: string): Promise<boolean> {
+  try {
+    await stat(filename);
+    return true;
+  } catch (error) {
+    return false;
+  }
+}
+
+export function dataFolder() {
+  return join("data", NETWORK_KEY);
+}
+
+export function transactionsFolder() {
+  return join(dataFolder(), "transactions");
 }
 
 export async function getTransactionFile(
   txid: string
 ): Promise<Transaction | undefined> {
-  await mkdir(join("data", "transactions"), { recursive: true });
+  // await mkdir(join("data", "transactions"), { recursive: true });
   const path = transactionPath(txid);
   try {
     const text = await readFile(path, "utf-8");
@@ -23,18 +40,6 @@ export async function getTransactionFile(
 export async function fetchTransaction(txid: string): Promise<Transaction> {
   const fileData = await getTransactionFile(txid);
   return fileData as Transaction;
-  // if (fileData) return fileData;
-  // const tx = await transactionsApi.getTransactionById({ txId: txid });
-  // // await transactionsApi.getTxListDetailsRaw
-  // console.log(tx);
-  // if (tx) {
-  //   await writeFile(
-  //     transactionPath(txid),
-  //     JSON.stringify(tx, null, 2),
-  //     "utf-8"
-  //   );
-  // }
-  // return tx;
 }
 
 // Given a list of txids, chunk them in groups of 50 and fetch using
@@ -42,8 +47,18 @@ export async function fetchTransaction(txid: string): Promise<Transaction> {
 export async function saveTransactions(txids: string[]) {
   const limit = 50;
   const chunks = [];
-  for (let i = 0; i < txids.length; i += limit) {
-    chunks.push(txids.slice(i, i + limit));
+  const missingTxids: string[] = [];
+  await Promise.all(
+    txids.map(async (txid) => {
+      const exists = await fileExists(transactionPath(txid));
+      if (!exists) {
+        missingTxids.push(txid);
+      }
+    })
+  );
+  console.log(`Fetching ${missingTxids.length} transactions`);
+  for (let i = 0; i < missingTxids.length; i += limit) {
+    chunks.push(missingTxids.slice(i, i + limit));
   }
   const results: Transaction[] = [];
   for (const chunk of chunks) {
@@ -56,6 +71,7 @@ export async function saveTransactions(txids: string[]) {
       results.push(tx.result);
     }
   }
+  await mkdir(transactionsFolder(), { recursive: true });
   await Promise.all(
     results.map(async (tx) => {
       await writeFile(

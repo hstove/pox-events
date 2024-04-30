@@ -5,7 +5,7 @@ import {
   ContractReturnOk,
   ContractReturn,
 } from "@clarigen/core";
-import { apiUrl, poxContractId } from "./api";
+import { NETWORK_KEY, apiUrl, poxContractId } from "./api";
 import { sleep } from "./utils";
 import { poxAddressToBtcAddress } from "@stacks/stacking";
 import { hex } from "@scure/base";
@@ -35,7 +35,7 @@ export async function getRewardCycleAddresses(cycle: number) {
     const btcAddress = poxAddressToBtcAddress(
       version,
       addr.poxAddr.hashbytes,
-      "testnet"
+      NETWORK_KEY
     );
     const signerKey = hex.encode(addr.signer);
     return {
