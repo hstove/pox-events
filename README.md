@@ -2,6 +2,14 @@
 
 A set of scripts to help export Stacking data.
 
+## Automation
+
+The scripts here are triggered automatically every hour via Github Actions. The updated datasets (as CSV) are saved to this repository.
+
+- [Solo Stacking and Pool operator commit transactions](./data/mainnet/commit-events.csv)
+- [Delegations](./data/mainnet/delegations.csv)
+- [Per-cycle reward sets](./data/mainnet/reward-set-84.csv)
+
 ## Installation
 
 ```bash

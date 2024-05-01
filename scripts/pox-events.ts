@@ -21,7 +21,7 @@ import { dateToString, loadEvents, saveCsv } from "../src/utils";
 async function debug() {
   const events = await loadEvents();
   for (const { print, txid } of events) {
-    if (print.name.includes("-increase")) {
+    if (print.name.includes("stack-aggregation-commit")) {
       console.log(print);
       break;
     }
