@@ -48,3 +48,25 @@ export async function getPoxInfo() {
   // const base = await infoApi.getPoxInfo();
   return base as PoxInfo;
 }
+
+export type StackerSet = {
+  stacker_set: {
+    signers: {
+      stacked_amt: number;
+      weight: number;
+      signing_key: string;
+    }[];
+  };
+};
+
+export async function getStackerSet(cycle: number) {
+  try {
+    const url = `${apiUrl}/v2/stacker_set/${cycle}`;
+    console.log(url);
+    const res = await fetch(url);
+    return (await res.json()) as StackerSet;
+  } catch (error) {
+    console.error(error);
+    return null;
+  }
+}
