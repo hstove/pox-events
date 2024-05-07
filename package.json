@@ -10,10 +10,12 @@
     "mainnet:list-events": "STX_NETWORK=\"mainnet\" tsx scripts/pox-events.ts",
     "mainnet:reward-set": "STX_NETWORK=\"mainnet\" tsx scripts/reward-set.ts",
     "mainnet:delegations": "STX_NETWORK=\"mainnet\" tsx scripts/delegations.ts",
+    "mainnet:stacker-set": "STX_NETWORK=\"mainnet\" tsx scripts/stacker-set.ts",
     "testnet:save-events": "STX_NETWORK=\"testnet\" tsx scripts/save-pox-events.ts",
     "testnet:list-events": "STX_NETWORK=\"testnet\" tsx scripts/pox-events.ts",
     "testnet:reward-set": "STX_NETWORK=\"testnet\" tsx scripts/reward-set.ts",
-    "testnet:delegations": "STX_NETWORK=\"testnet\" tsx scripts/delegations.ts"
+    "testnet:delegations": "STX_NETWORK=\"testnet\" tsx scripts/delegations.ts",
+    "testnet:stacker-set": "STX_NETWORK=\"testnet\" tsx scripts/stacker-set.ts"
   },
   "author": "",
   "license": "ISC",

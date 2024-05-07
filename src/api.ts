@@ -59,12 +59,15 @@ export type StackerSet = {
   };
 };
 
+export type StackerSetError = {
+  err_msg: string;
+};
+
 export async function getStackerSet(cycle: number) {
   try {
     const url = `${apiUrl}/v2/stacker_set/${cycle}`;
-    console.log(url);
     const res = await fetch(url);
-    return (await res.json()) as StackerSet;
+    return (await res.json()) as StackerSet | StackerSetError;
   } catch (error) {
     console.error(error);
     return null;

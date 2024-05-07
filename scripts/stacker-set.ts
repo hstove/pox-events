@@ -14,9 +14,9 @@ async function run() {
   const poxInfo = await getPoxInfo();
   // console.log("poxInfo", poxInfo);
   const nextCycle = poxInfo.next_cycle.id;
-  console.log(`Next cycle: ${nextCycle}\n\n`);
+  console.log(`Next cycle: ${nextCycle}\n`);
   const stackerSet = await getStackerSet(nextCycle);
-  if (!stackerSet) {
+  if (!stackerSet || "err_msg" in stackerSet) {
     console.log(`No stacker set for cycle ${nextCycle}`);
     return;
   }

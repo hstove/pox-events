@@ -30,6 +30,8 @@ jobs:
         run: pnpm mainnet:reward-set
       - name: Delegations
         run: pnpm mainnet:delegations
+      - name: Stacker set
+        run: pnpm mainnet:stacker-set
       - name: Commit & Push changes
         uses: actions-js/push@master
         with:
