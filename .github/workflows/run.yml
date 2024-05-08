@@ -32,6 +32,8 @@ jobs:
         run: pnpm mainnet:delegations
       - name: Stacker set
         run: pnpm mainnet:stacker-set
+      - name: Signer nodes
+        run: pnpm mainnet:signer-nodes
       - name: Commit & Push changes
         uses: actions-js/push@master
         with:
