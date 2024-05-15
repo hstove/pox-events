@@ -1,0 +1,75 @@
+{
+  "tx_id": "0x61067993787487e667dd7932e8eed5d5823e26a1689b5e0a64498a754abe6567",
+  "nonce": 7,
+  "fee_rate": "71556",
+  "sender_address": "SP1X1H5HV2XYKJ81PV4GKGQBKEM4MX3WSR1PRW1HJ",
+  "sponsored": false,
+  "post_condition_mode": "allow",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "is_unanchored": false,
+  "block_hash": "0xcc028d541a2a46bc02e447231561e9c36e029e50e575d0ae63ffb0bebf86b0b1",
+  "parent_block_hash": "0x2f0b65a453c0ab139e06eb1327ab526b4917fac61dc4ed1fc980df630905baaa",
+  "block_height": 150121,
+  "block_time": 1715762945,
+  "block_time_iso": "2024-05-15T08:49:05.000Z",
+  "burn_block_time": 1715762910,
+  "burn_block_time_iso": "2024-05-15T08:48:30.000Z",
+  "parent_burn_block_time": 1715762763,
+  "parent_burn_block_time_iso": "2024-05-15T08:46:03.000Z",
+  "canonical": true,
+  "tx_index": 65,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x070c000000030b6c6f636b2d616d6f756e74010000000000000000000000000bdc7fc007737461636b657205167a18963b177d392036d921385d7375094e8f99c012756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000ceb3a",
+    "repr": "(ok (tuple (lock-amount u199000000) (stacker 'SP1X1H5HV2XYKJ81PV4GKGQBKEM4MX3WSR1PRW1HJ) (unlock-burn-height u846650)))"
+  },
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "event_count": 3,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x61067993787487e667dd7932e8eed5d5823e26a1689b5e0a64498a754abe6567",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e63650100000000000000000000000000a7cdeb176275726e636861696e2d756e6c6f636b2d68656967687401000000000000000000000000000ce30604646174610c000000070964656c656761746f72061683ed66860315e334010bbfb76eb3eef887efee0a11706f78342d666173742d706f6f6c2d76330c656e642d6379636c652d69640a01000000000000000000000000000000560c657874656e642d636f756e74010000000000000000000000000000000108706f782d616464720c0000000209686173686279746573020000001483ed66860315e334010bbfb76eb3eef887efee0a0776657273696f6e02000000010407737461636b657205167a18963b177d392036d921385d7375094e8f99c00e73746172742d6379636c652d6964010000000000000000000000000000005512756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000ceb3a066c6f636b6564010000000000000000000000000bdc7fc0046e616d650d0000001564656c65676174652d737461636b2d657874656e6407737461636b657205167a18963b177d392036d921385d7375094e8f99c0",
+          "repr": "(ok (tuple (balance u10997227) (burnchain-unlock-height u844550) (data (tuple (delegator 'SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3) (end-cycle-id (some u86)) (extend-count u1) (pox-addr (tuple (hashbytes 0x83ed66860315e334010bbfb76eb3eef887efee0a) (version 0x04))) (stacker 'SP1X1H5HV2XYKJ81PV4GKGQBKEM4MX3WSR1PRW1HJ) (start-cycle-id u85) (unlock-burn-height u846650))) (locked u199000000) (name \"delegate-stack-extend\") (stacker 'SP1X1H5HV2XYKJ81PV4GKGQBKEM4MX3WSR1PRW1HJ)))"
+        }
+      }
+    },
+    {
+      "event_index": 2,
+      "event_type": "stx_lock",
+      "tx_id": "0x61067993787487e667dd7932e8eed5d5823e26a1689b5e0a64498a754abe6567",
+      "stx_lock_event": {
+        "locked_amount": "199000000",
+        "unlock_height": 846650,
+        "locked_address": "SP1X1H5HV2XYKJ81PV4GKGQBKEM4MX3WSR1PRW1HJ"
+      }
+    }
+  ],
+  "execution_cost_read_count": 73,
+  "execution_cost_read_length": 330164,
+  "execution_cost_runtime": 785288,
+  "execution_cost_write_count": 5,
+  "execution_cost_write_length": 523,
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3",
+    "function_name": "delegate-stack-stx",
+    "function_signature": "(define-public (delegate-stack-stx (user principal)))",
+    "function_args": [
+      {
+        "hex": "0x05167a18963b177d392036d921385d7375094e8f99c0",
+        "repr": "'SP1X1H5HV2XYKJ81PV4GKGQBKEM4MX3WSR1PRW1HJ",
+        "name": "user",
+        "type": "principal"
+      }
+    ]
+  }
+}
