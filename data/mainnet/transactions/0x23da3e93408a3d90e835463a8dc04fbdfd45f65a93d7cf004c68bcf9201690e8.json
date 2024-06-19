@@ -1,0 +1,76 @@
+{
+  "tx_id": "0x23da3e93408a3d90e835463a8dc04fbdfd45f65a93d7cf004c68bcf9201690e8",
+  "nonce": 6341,
+  "fee_rate": "100000",
+  "sender_address": "SP1K1A1PMGW2ZJCNF46NWZWHG8TS1D23EGH1KNK60",
+  "sponsored": false,
+  "post_condition_mode": "allow",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "is_unanchored": false,
+  "block_hash": "0x33bfe7b03d337dd19e3fd0773a2106ab8da25a53de85323a5af30794e2192544",
+  "parent_block_hash": "0xfe482da4feb9e17f0cdc242a795cf1d8d74d69d5755d7de125e1b751c23f9051",
+  "block_height": 154510,
+  "block_time": 1718786821,
+  "block_time_iso": "2024-06-19T08:47:01.000Z",
+  "burn_block_height": 848605,
+  "burn_block_time": 1718786769,
+  "burn_block_time_iso": "2024-06-19T08:46:09.000Z",
+  "parent_burn_block_time": 1718784185,
+  "parent_burn_block_time_iso": "2024-06-19T08:03:05.000Z",
+  "canonical": true,
+  "tx_index": 97,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x070b00000001070c000000030b6c6f636b2d616d6f756e74010000000000000000000000005958ecc007737461636b65720516a2a587f2f704588d78b646b2da7e00d03df73fea12756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000cfba2",
+    "repr": "(ok (list (ok (tuple (lock-amount u1499000000) (stacker 'SP2HAB1ZJYW25H3BRPS3B5PKY0383VXSZXBQ3CT76) (unlock-burn-height u850850)))))"
+  },
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "event_count": 3,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x23da3e93408a3d90e835463a8dc04fbdfd45f65a93d7cf004c68bcf9201690e8",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e636501000000000000000000000000c9556e88176275726e636861696e2d756e6c6f636b2d686569676874010000000000000000000000000000000004646174610c000000090964656c656761746f72061683ed66860315e334010bbfb76eb3eef887efee0a11706f78342d666173742d706f6f6c2d76330c656e642d6379636c652d69640a01000000000000000000000000000000580b6c6f636b2d616d6f756e74010000000000000000000000005958ecc00b6c6f636b2d706572696f64010000000000000000000000000000000108706f782d616464720c0000000209686173686279746573020000001483ed66860315e334010bbfb76eb3eef887efee0a0776657273696f6e02000000010407737461636b65720516a2a587f2f704588d78b646b2da7e00d03df73fea1173746172742d6275726e2d68656967687401000000000000000000000000000cf2dd0e73746172742d6379636c652d6964010000000000000000000000000000005712756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000cfba2066c6f636b65640100000000000000000000000000000000046e616d650d0000001264656c65676174652d737461636b2d73747807737461636b65720516a2a587f2f704588d78b646b2da7e00d03df73fea",
+          "repr": "(ok (tuple (balance u3377819272) (burnchain-unlock-height u0) (data (tuple (delegator 'SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3) (end-cycle-id (some u88)) (lock-amount u1499000000) (lock-period u1) (pox-addr (tuple (hashbytes 0x83ed66860315e334010bbfb76eb3eef887efee0a) (version 0x04))) (stacker 'SP2HAB1ZJYW25H3BRPS3B5PKY0383VXSZXBQ3CT76) (start-burn-height u848605) (start-cycle-id u87) (unlock-burn-height u850850))) (locked u0) (name \"delegate-stack-stx\") (stacker 'SP2HAB1ZJYW25H3BRPS3B5PKY0383VXSZXBQ3CT76)))"
+        }
+      }
+    },
+    {
+      "event_index": 2,
+      "event_type": "stx_lock",
+      "tx_id": "0x23da3e93408a3d90e835463a8dc04fbdfd45f65a93d7cf004c68bcf9201690e8",
+      "stx_lock_event": {
+        "locked_amount": "1499000000",
+        "unlock_height": 850850,
+        "locked_address": "SP2HAB1ZJYW25H3BRPS3B5PKY0383VXSZXBQ3CT76"
+      }
+    }
+  ],
+  "execution_cost_read_count": 49,
+  "execution_cost_read_length": 175332,
+  "execution_cost_runtime": 569066,
+  "execution_cost_write_count": 4,
+  "execution_cost_write_length": 522,
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3",
+    "function_name": "delegate-stack-stx-many",
+    "function_signature": "(define-public (delegate-stack-stx-many (users (list 30 principal))))",
+    "function_args": [
+      {
+        "hex": "0x0b000000010516a2a587f2f704588d78b646b2da7e00d03df73fea",
+        "repr": "(list 'SP2HAB1ZJYW25H3BRPS3B5PKY0383VXSZXBQ3CT76)",
+        "name": "users",
+        "type": "(list 30 principal)"
+      }
+    ]
+  }
+}
