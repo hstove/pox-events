@@ -1,0 +1,76 @@
+{
+  "tx_id": "0x11afae65fa127370d8269175c40e6fc8260ecc3a26bd91b78b27376727469e6f",
+  "nonce": 11,
+  "fee_rate": "59666",
+  "sender_address": "SP4KZK2PF2DYFW9FJYWZ9M9K00PJ59M51MV7X10D",
+  "sponsored": false,
+  "post_condition_mode": "deny",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "is_unanchored": false,
+  "block_hash": "0x1382b8191add54692aa9b04be738c7d8c51c361218d533880600a7e766ba49db",
+  "parent_block_hash": "0x9c3c93895921dd842f19c78f8c28f692775b6666730d8d621ef6e6ecea193a2f",
+  "block_height": 157912,
+  "block_time": 1721076786,
+  "block_time_iso": "2024-07-15T20:53:06.000Z",
+  "burn_block_height": 852361,
+  "burn_block_time": 1721076757,
+  "burn_block_time_iso": "2024-07-15T20:52:37.000Z",
+  "parent_burn_block_time": 1721075318,
+  "parent_burn_block_time_iso": "2024-07-15T20:28:38.000Z",
+  "canonical": true,
+  "tx_index": 58,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x070c000000030b6c6f636b2d616d6f756e7401000000000000000000000000e4ee756907737461636b65720516093fcc56789be7f12f97b9f4d133002d22a6850d12756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000d0c0a",
+    "repr": "(ok (tuple (lock-amount u3840832873) (stacker 'SP4KZK2PF2DYFW9FJYWZ9M9K00PJ59M51MV7X10D) (unlock-burn-height u855050)))"
+  },
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "event_count": 2,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x11afae65fa127370d8269175c40e6fc8260ecc3a26bd91b78b27376727469e6f",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e63650100000000000000000000000001ca872b176275726e636861696e2d756e6c6f636b2d68656967687401000000000000000000000000000d03d604646174610c000000070964656c656761746f72061683ed66860315e334010bbfb76eb3eef887efee0a11706f78342d666173742d706f6f6c2d76330c656e642d6379636c652d69640a010000000000000000000000000000005a0c657874656e642d636f756e74010000000000000000000000000000000108706f782d616464720c0000000209686173686279746573020000001483ed66860315e334010bbfb76eb3eef887efee0a0776657273696f6e02000000010407737461636b65720516093fcc56789be7f12f97b9f4d133002d22a6850d0e73746172742d6379636c652d6964010000000000000000000000000000005912756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000d0c0a066c6f636b656401000000000000000000000000e4ee7569046e616d650d0000001564656c65676174652d737461636b2d657874656e6407737461636b65720516093fcc56789be7f12f97b9f4d133002d22a6850d",
+          "repr": "(ok (tuple (balance u30050091) (burnchain-unlock-height u852950) (data (tuple (delegator 'SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3) (end-cycle-id (some u90)) (extend-count u1) (pox-addr (tuple (hashbytes 0x83ed66860315e334010bbfb76eb3eef887efee0a) (version 0x04))) (stacker 'SP4KZK2PF2DYFW9FJYWZ9M9K00PJ59M51MV7X10D) (start-cycle-id u89) (unlock-burn-height u855050))) (locked u3840832873) (name \"delegate-stack-extend\") (stacker 'SP4KZK2PF2DYFW9FJYWZ9M9K00PJ59M51MV7X10D)))"
+        }
+      }
+    },
+    {
+      "event_index": 1,
+      "event_type": "stx_lock",
+      "tx_id": "0x11afae65fa127370d8269175c40e6fc8260ecc3a26bd91b78b27376727469e6f",
+      "stx_lock_event": {
+        "locked_amount": "3840832873",
+        "unlock_height": 855050,
+        "locked_address": "SP4KZK2PF2DYFW9FJYWZ9M9K00PJ59M51MV7X10D"
+      }
+    }
+  ],
+  "execution_cost_read_count": 73,
+  "execution_cost_read_length": 330164,
+  "execution_cost_runtime": 785288,
+  "execution_cost_write_count": 5,
+  "execution_cost_write_length": 523,
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3",
+    "function_name": "delegate-stack-stx",
+    "function_signature": "(define-public (delegate-stack-stx (user principal)))",
+    "function_args": [
+      {
+        "hex": "0x0516093fcc56789be7f12f97b9f4d133002d22a6850d",
+        "repr": "'SP4KZK2PF2DYFW9FJYWZ9M9K00PJ59M51MV7X10D",
+        "name": "user",
+        "type": "principal"
+      }
+    ]
+  }
+}
