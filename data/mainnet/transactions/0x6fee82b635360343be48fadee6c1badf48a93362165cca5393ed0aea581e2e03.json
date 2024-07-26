@@ -1,0 +1,76 @@
+{
+  "tx_id": "0x6fee82b635360343be48fadee6c1badf48a93362165cca5393ed0aea581e2e03",
+  "nonce": 32413,
+  "fee_rate": "2500",
+  "sender_address": "SP1FJ0MY8M18KZF43E85WJN48SDXYS1EC4BCQW02S",
+  "sponsored": false,
+  "post_condition_mode": "deny",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "is_unanchored": false,
+  "block_hash": "0xff619c6cc77ad980ff677f43cee362bbedfd0219540c493c30867594624a2792",
+  "parent_block_hash": "0x71961c3b23e59a746fc0fc837af3c97c52c49dd114fefa985c0084a1f0a46a78",
+  "block_height": 159432,
+  "block_time": 1722021878,
+  "block_time_iso": "2024-07-26T19:24:38.000Z",
+  "burn_block_height": 854074,
+  "burn_block_time": 1722021838,
+  "burn_block_time_iso": "2024-07-26T19:23:58.000Z",
+  "parent_burn_block_time": 1722020708,
+  "parent_burn_block_time_iso": "2024-07-26T19:05:08.000Z",
+  "canonical": true,
+  "tx_index": 74,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x070c000000030b6c6f636b2d616d6f756e74010000000000000000000002ba7def300007737461636b657205165f2053c8a0513fbc83720bc95488cb7bec85cc2212756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000d143e",
+    "repr": "(ok (tuple (lock-amount u3000000000000) (stacker 'SP1FJ0MY8M18KZF43E85WJN48SDXYS1EC4BCQW02S) (unlock-burn-height u857150)))"
+  },
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "event_count": 2,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x6fee82b635360343be48fadee6c1badf48a93362165cca5393ed0aea581e2e03",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e636501000000000000000000000023815665af176275726e636861696e2d756e6c6f636b2d68656967687401000000000000000000000000000d0c0a04646174610c000000070964656c656761746f72061683ed66860315e334010bbfb76eb3eef887efee0a11706f78342d666173742d706f6f6c2d76330c656e642d6379636c652d69640a010000000000000000000000000000005b0c657874656e642d636f756e74010000000000000000000000000000000108706f782d616464720c0000000209686173686279746573020000001483ed66860315e334010bbfb76eb3eef887efee0a0776657273696f6e02000000010407737461636b657205165f2053c8a0513fbc83720bc95488cb7bec85cc220e73746172742d6379636c652d6964010000000000000000000000000000005a12756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000d143e066c6f636b6564010000000000000000000002ba7def3000046e616d650d0000001564656c65676174652d737461636b2d657874656e6407737461636b657205165f2053c8a0513fbc83720bc95488cb7bec85cc22",
+          "repr": "(ok (tuple (balance u152493778351) (burnchain-unlock-height u855050) (data (tuple (delegator 'SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3) (end-cycle-id (some u91)) (extend-count u1) (pox-addr (tuple (hashbytes 0x83ed66860315e334010bbfb76eb3eef887efee0a) (version 0x04))) (stacker 'SP1FJ0MY8M18KZF43E85WJN48SDXYS1EC4BCQW02S) (start-cycle-id u90) (unlock-burn-height u857150))) (locked u3000000000000) (name \"delegate-stack-extend\") (stacker 'SP1FJ0MY8M18KZF43E85WJN48SDXYS1EC4BCQW02S)))"
+        }
+      }
+    },
+    {
+      "event_index": 1,
+      "event_type": "stx_lock",
+      "tx_id": "0x6fee82b635360343be48fadee6c1badf48a93362165cca5393ed0aea581e2e03",
+      "stx_lock_event": {
+        "locked_amount": "3000000000000",
+        "unlock_height": 857150,
+        "locked_address": "SP1FJ0MY8M18KZF43E85WJN48SDXYS1EC4BCQW02S"
+      }
+    }
+  ],
+  "execution_cost_read_count": 73,
+  "execution_cost_read_length": 330164,
+  "execution_cost_runtime": 785288,
+  "execution_cost_write_count": 5,
+  "execution_cost_write_length": 523,
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3",
+    "function_name": "delegate-stack-stx",
+    "function_signature": "(define-public (delegate-stack-stx (user principal)))",
+    "function_args": [
+      {
+        "hex": "0x05165f2053c8a0513fbc83720bc95488cb7bec85cc22",
+        "repr": "'SP1FJ0MY8M18KZF43E85WJN48SDXYS1EC4BCQW02S",
+        "name": "user",
+        "type": "principal"
+      }
+    ]
+  }
+}
