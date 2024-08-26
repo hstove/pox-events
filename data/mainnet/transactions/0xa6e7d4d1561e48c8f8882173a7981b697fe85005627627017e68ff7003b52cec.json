@@ -1,0 +1,76 @@
+{
+  "tx_id": "0xa6e7d4d1561e48c8f8882173a7981b697fe85005627627017e68ff7003b52cec",
+  "nonce": 13,
+  "fee_rate": "4864",
+  "sender_address": "SP32Y3JEP5YH1F81S9DZME6CQV9MZ167MK0PAQKM",
+  "sponsored": false,
+  "post_condition_mode": "deny",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "is_unanchored": false,
+  "block_hash": "0xe468984723d637a9a424e941be464e19898e7613c215e92516915b15aefccdae",
+  "parent_block_hash": "0x6347d520f6bc681f743c980026908de19a4f49b40837c9fe42ffd790559f7a59",
+  "block_height": 163466,
+  "block_time": 1724674548,
+  "block_time_iso": "2024-08-26T12:15:48.000Z",
+  "burn_block_height": 858522,
+  "burn_block_time": 1724674380,
+  "burn_block_time_iso": "2024-08-26T12:13:00.000Z",
+  "parent_burn_block_time": 1724673853,
+  "parent_burn_block_time_iso": "2024-08-26T12:04:13.000Z",
+  "canonical": true,
+  "tx_index": 115,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x070c000000030b6c6f636b2d616d6f756e74010000000000000000000000001e47770007737461636b65720516062f0e4eb17d10bd01ca5bfa38ccbed34f84c7a412756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000d24a6",
+    "repr": "(ok (tuple (lock-amount u508000000) (stacker 'SP32Y3JEP5YH1F81S9DZME6CQV9MZ167MK0PAQKM) (unlock-burn-height u861350)))"
+  },
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "event_count": 2,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0xa6e7d4d1561e48c8f8882173a7981b697fe85005627627017e68ff7003b52cec",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e6365010000000000000000000000000058cbff176275726e636861696e2d756e6c6f636b2d68656967687401000000000000000000000000000d1c7204646174610c000000070964656c656761746f72061683ed66860315e334010bbfb76eb3eef887efee0a11706f78342d666173742d706f6f6c2d76330c656e642d6379636c652d69640a010000000000000000000000000000005d0c657874656e642d636f756e74010000000000000000000000000000000108706f782d616464720c0000000209686173686279746573020000001483ed66860315e334010bbfb76eb3eef887efee0a0776657273696f6e02000000010407737461636b65720516062f0e4eb17d10bd01ca5bfa38ccbed34f84c7a40e73746172742d6379636c652d6964010000000000000000000000000000005c12756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000d24a6066c6f636b6564010000000000000000000000001e477700046e616d650d0000001564656c65676174652d737461636b2d657874656e6407737461636b65720516062f0e4eb17d10bd01ca5bfa38ccbed34f84c7a4",
+          "repr": "(ok (tuple (balance u5819391) (burnchain-unlock-height u859250) (data (tuple (delegator 'SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3) (end-cycle-id (some u93)) (extend-count u1) (pox-addr (tuple (hashbytes 0x83ed66860315e334010bbfb76eb3eef887efee0a) (version 0x04))) (stacker 'SP32Y3JEP5YH1F81S9DZME6CQV9MZ167MK0PAQKM) (start-cycle-id u92) (unlock-burn-height u861350))) (locked u508000000) (name \"delegate-stack-extend\") (stacker 'SP32Y3JEP5YH1F81S9DZME6CQV9MZ167MK0PAQKM)))"
+        }
+      }
+    },
+    {
+      "event_index": 1,
+      "event_type": "stx_lock",
+      "tx_id": "0xa6e7d4d1561e48c8f8882173a7981b697fe85005627627017e68ff7003b52cec",
+      "stx_lock_event": {
+        "locked_amount": "508000000",
+        "unlock_height": 861350,
+        "locked_address": "SP32Y3JEP5YH1F81S9DZME6CQV9MZ167MK0PAQKM"
+      }
+    }
+  ],
+  "execution_cost_read_count": 73,
+  "execution_cost_read_length": 330164,
+  "execution_cost_runtime": 785288,
+  "execution_cost_write_count": 5,
+  "execution_cost_write_length": 523,
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3",
+    "function_name": "delegate-stack-stx",
+    "function_signature": "(define-public (delegate-stack-stx (user principal)))",
+    "function_args": [
+      {
+        "hex": "0x0516062f0e4eb17d10bd01ca5bfa38ccbed34f84c7a4",
+        "repr": "'SP32Y3JEP5YH1F81S9DZME6CQV9MZ167MK0PAQKM",
+        "name": "user",
+        "type": "principal"
+      }
+    ]
+  }
+}
