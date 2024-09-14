@@ -1,0 +1,84 @@
+{
+  "tx_id": "0x1509e07977a1af1f85f4feeb9651e1a399a2ebe9ea894691fd2ce23c4517b4ef",
+  "nonce": 2,
+  "fee_rate": "12525",
+  "sender_address": "SM3KSXQTN712FTHR55ZGM5G52120A1PR9DX3ZSW9J",
+  "sponsored": false,
+  "post_condition_mode": "deny",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "block_hash": "0xab61e6f8075b5214bd9d5c98650523636c830d6601e80b050d9a69d2c3c26d01",
+  "block_height": 165954,
+  "block_time": 1726322451,
+  "block_time_iso": "2024-09-14T14:00:51.000Z",
+  "burn_block_time": 1726322433,
+  "burn_block_height": 861293,
+  "burn_block_time_iso": "2024-09-14T14:00:33.000Z",
+  "parent_burn_block_time": 1726322103,
+  "parent_burn_block_time_iso": "2024-09-14T13:55:03.000Z",
+  "canonical": true,
+  "tx_index": 29,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x0703",
+    "repr": "(ok true)"
+  },
+  "event_count": 1,
+  "parent_block_hash": "0xe45bc04da8ca06f630f585a7aec815ab81ce230a1535095864ad646d377ef2ca",
+  "is_unanchored": false,
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "execution_cost_read_count": 6,
+  "execution_cost_read_length": 77178,
+  "execution_cost_runtime": 103871,
+  "execution_cost_write_count": 1,
+  "execution_cost_write_length": 202,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x1509e07977a1af1f85f4feeb9651e1a399a2ebe9ea894691fd2ce23c4517b4ef",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e63650100000000000000000000048c334ac1a3176275726e636861696e2d756e6c6f636b2d686569676874010000000000000000000000000000000004646174610c000000060b616d6f756e742d757374780100000000000000000000048c273950000b64656c65676174652d746f051682d32f8336b30e2bf944c9254b7aaf793bd5301e0c656e642d6379636c652d69640a010000000000000000000000000000005e08706f782d616464720a0c0000000209686173686279746573020000001407058b3638fb5d240596cf7bdcbe2f758fc104c30776657273696f6e0200000001010e73746172742d6379636c652d6964010000000000000000000000000000005e12756e6c6f636b2d6275726e2d6865696768740a01000000000000000000000000000d2d61066c6f636b65640100000000000000000000000000000000046e616d650d0000000c64656c65676174652d73747807737461636b65720514e79edf553844fd47052fe142c0a20880a0db096f",
+          "repr": "(ok (tuple (balance u5000202469795) (burnchain-unlock-height u0) (data (tuple (amount-ustx u5000000000000) (delegate-to 'SP21D6BW36TSGWAZS8K4JAJVTNXWKQN9G3TH5MG6A) (end-cycle-id (some u94)) (pox-addr (some (tuple (hashbytes 0x07058b3638fb5d240596cf7bdcbe2f758fc104c3) (version 0x01)))) (start-cycle-id u94) (unlock-burn-height (some u863585)))) (locked u0) (name \"delegate-stx\") (stacker 'SM3KSXQTN712FTHR55ZGM5G52120A1PR9DX3ZSW9J)))"
+        }
+      }
+    }
+  ],
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+    "function_name": "delegate-stx",
+    "function_signature": "(define-public (delegate-stx (amount-ustx uint) (delegate-to principal) (until-burn-ht (optional uint)) (pox-addr (optional (tuple (hashbytes (buff 32)) (version (buff 1)))))))",
+    "function_args": [
+      {
+        "hex": "0x0100000000000000000000048c27395000",
+        "repr": "u5000000000000",
+        "name": "amount-ustx",
+        "type": "uint"
+      },
+      {
+        "hex": "0x051682d32f8336b30e2bf944c9254b7aaf793bd5301e",
+        "repr": "'SP21D6BW36TSGWAZS8K4JAJVTNXWKQN9G3TH5MG6A",
+        "name": "delegate-to",
+        "type": "principal"
+      },
+      {
+        "hex": "0x0a01000000000000000000000000000d2d61",
+        "repr": "(some u863585)",
+        "name": "until-burn-ht",
+        "type": "(optional uint)"
+      },
+      {
+        "hex": "0x0a0c0000000209686173686279746573020000001407058b3638fb5d240596cf7bdcbe2f758fc104c30776657273696f6e020000000101",
+        "repr": "(some (tuple (hashbytes 0x07058b3638fb5d240596cf7bdcbe2f758fc104c3) (version 0x01)))",
+        "name": "pox-addr",
+        "type": "(optional (tuple (hashbytes (buff 32)) (version (buff 1))))"
+      }
+    ]
+  }
+}
