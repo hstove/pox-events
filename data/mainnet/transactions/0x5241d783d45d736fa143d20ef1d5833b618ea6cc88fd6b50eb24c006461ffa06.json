@@ -1,0 +1,76 @@
+{
+  "tx_id": "0x5241d783d45d736fa143d20ef1d5833b618ea6cc88fd6b50eb24c006461ffa06",
+  "nonce": 9,
+  "fee_rate": "103434",
+  "sender_address": "SP13MXTK0A87H3NZ493VPAR4A5MTP12E6E07RTXEF",
+  "sponsored": false,
+  "post_condition_mode": "deny",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "block_hash": "0xc8692253743d79948f1d5263ab81d780b96549103ef3a16265ac4a38eae73145",
+  "block_height": 167013,
+  "block_time": 1727080894,
+  "block_time_iso": "2024-09-23T08:41:34.000Z",
+  "burn_block_time": 1727080856,
+  "burn_block_height": 862494,
+  "burn_block_time_iso": "2024-09-23T08:40:56.000Z",
+  "parent_burn_block_time": 1727079217,
+  "parent_burn_block_time_iso": "2024-09-23T08:13:37.000Z",
+  "canonical": true,
+  "tx_index": 50,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x070c000000030b6c6f636b2d616d6f756e74010000000000000000000000001087c4e907737461636b65720516474eea60520f11d7e448f765608a2d356089c67012756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000d350e",
+    "repr": "(ok (tuple (lock-amount u277333225) (stacker 'SP13MXTK0A87H3NZ493VPAR4A5MTP12E6E07RTXEF) (unlock-burn-height u865550)))"
+  },
+  "event_count": 2,
+  "parent_block_hash": "0xa93d540e463dcf148041fce90e2ddbe2edb39a353852faa3ec6b922ccfe2986b",
+  "is_unanchored": false,
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "execution_cost_read_count": 73,
+  "execution_cost_read_length": 330164,
+  "execution_cost_runtime": 785288,
+  "execution_cost_write_count": 5,
+  "execution_cost_write_length": 523,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x5241d783d45d736fa143d20ef1d5833b618ea6cc88fd6b50eb24c006461ffa06",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e6365010000000000000000000000000054bd82176275726e636861696e2d756e6c6f636b2d68656967687401000000000000000000000000000d2cda04646174610c000000070964656c656761746f72061683ed66860315e334010bbfb76eb3eef887efee0a11706f78342d666173742d706f6f6c2d76330c656e642d6379636c652d69640a010000000000000000000000000000005f0c657874656e642d636f756e74010000000000000000000000000000000108706f782d616464720c0000000209686173686279746573020000001483ed66860315e334010bbfb76eb3eef887efee0a0776657273696f6e02000000010407737461636b65720516474eea60520f11d7e448f765608a2d356089c6700e73746172742d6379636c652d6964010000000000000000000000000000005e12756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000d350e066c6f636b6564010000000000000000000000001087c4e9046e616d650d0000001564656c65676174652d737461636b2d657874656e6407737461636b65720516474eea60520f11d7e448f765608a2d356089c670",
+          "repr": "(ok (tuple (balance u5553538) (burnchain-unlock-height u863450) (data (tuple (delegator 'SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3) (end-cycle-id (some u95)) (extend-count u1) (pox-addr (tuple (hashbytes 0x83ed66860315e334010bbfb76eb3eef887efee0a) (version 0x04))) (stacker 'SP13MXTK0A87H3NZ493VPAR4A5MTP12E6E07RTXEF) (start-cycle-id u94) (unlock-burn-height u865550))) (locked u277333225) (name \"delegate-stack-extend\") (stacker 'SP13MXTK0A87H3NZ493VPAR4A5MTP12E6E07RTXEF)))"
+        }
+      }
+    },
+    {
+      "event_index": 1,
+      "event_type": "stx_lock",
+      "tx_id": "0x5241d783d45d736fa143d20ef1d5833b618ea6cc88fd6b50eb24c006461ffa06",
+      "stx_lock_event": {
+        "locked_amount": "277333225",
+        "unlock_height": 865550,
+        "locked_address": "SP13MXTK0A87H3NZ493VPAR4A5MTP12E6E07RTXEF"
+      }
+    }
+  ],
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3",
+    "function_name": "delegate-stack-stx",
+    "function_signature": "(define-public (delegate-stack-stx (user principal)))",
+    "function_args": [
+      {
+        "hex": "0x0516474eea60520f11d7e448f765608a2d356089c670",
+        "repr": "'SP13MXTK0A87H3NZ493VPAR4A5MTP12E6E07RTXEF",
+        "name": "user",
+        "type": "principal"
+      }
+    ]
+  }
+}
