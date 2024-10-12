@@ -5,7 +5,7 @@ import {
 } from "@stacks/stacks-blockchain-api-types";
 import { mkdir, writeFile } from "fs/promises";
 import { CachedPrint } from "../src/pox-types";
-import { saveTransactions } from "../src/transactions";
+import { fetchTransaction, saveTransactions } from "../src/transactions";
 import { join } from "path";
 import { sleep } from "../src/utils";
 
@@ -28,7 +28,8 @@ async function run() {
   const eventsHex: CachedPrint[] = [];
   let offset = 0;
   let lastEventsLength = 1;
-  while (lastEventsLength > 0) {
+  let foundOne = false;
+  while (lastEventsLength > 0 && !foundOne) {
     const events = await fetchPoxEvents(offset);
     lastEventsLength = events.results.length;
     offset += limit;
@@ -40,6 +41,16 @@ async function run() {
         txid: event.tx_id,
       });
     });
+    if (eventsHex.length > 0) {
+      const lastEvent = eventsHex.at(-1);
+      if (lastEvent) {
+        const tx = await fetchTransaction(lastEvent.txid);
+        if (typeof tx !== "undefined") {
+          foundOne = true;
+          console.log(`Found existing tx: ${lastEvent.txid}`);
+        }
+      }
+    }
     console.log(`Offset: ${offset}, Total: ${eventsHex.length}`);
     await sleep(1000);
   }
