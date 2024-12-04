@@ -1,41 +1,41 @@
 latitude,longitude,Country Code,Country,City,IP Address
-39.0438,-77.4874,US,United States,Ashburn,54.80.131.114
-48.1951,16.3483,AT,Austria,Vienna,89.58.16.139
-43.6547,-79.3623,CA,Canada,Toronto,146.190.243.137
-50.1109,8.68213,DE,Germany,Frankfurt am Main,3.122.176.89
-51.1878,6.8607,DE,Germany,Düsseldorf,84.54.23.48
-43.6547,-79.3623,CA,Canada,Toronto,143.198.46.130
+40.0992,-83.1141,US,United States,Dublin,3.131.66.186
 1.28009,103.851,SG,Singapore,Singapore,52.77.118.154
-30.4431,-91.1287,US,United States,Baton Rouge,69.2.42.123
-39.0438,-77.4874,US,United States,Ashburn,54.196.32.74
-50.3986,8.07958,DE,Germany,Limburg an der Lahn,141.95.124.216
-37.5665,126.978,KR,South Korea,Seoul,52.79.171.57
-39.0438,-77.4874,US,United States,Ashburn,54.91.222.127
-48.5734,7.75211,FR,France,Strasbourg,91.134.22.4
-50.1109,8.68213,DE,Germany,Frankfurt am Main,52.58.243.225
-50.7012,3.21501,FR,France,Wattrelos,141.94.3.10
+38.9071,-77.0368,US,United States,Washington,34.86.98.243
+50.1109,8.68213,DE,Germany,Frankfurt am Main,3.122.176.89
 48.8566,2.35222,FR,France,Paris,91.134.53.221
+50.1101,8.6721,DE,Germany,Frankfurt am Main,57.129.52.183
+39.0438,-77.4874,US,United States,Ashburn,54.80.131.114
+50.1245,8.46324,DE,Germany,Kelkheim,185.254.97.213
+32.8771,-80.013,US,United States,North Charleston,35.185.91.239
+43.6547,-79.3623,CA,Canada,Toronto,159.203.0.182
+48.5734,7.75211,FR,France,Strasbourg,162.19.43.6
+43.6547,-79.3623,CA,Canada,Toronto,167.99.181.226
+40.0992,-83.1141,US,United States,Dublin,3.132.241.37
+50.9009,4.4855,BE,Belgium,Brussels,35.189.230.146
+60.1797,24.9344,FI,Finland,Helsinki,65.109.125.211
+39.018,-77.539,US,United States,Ashburn,150.136.127.40
+48.1951,16.3483,AT,Austria,Vienna,89.58.16.139
+30.4431,-91.1287,US,United States,Baton Rouge,69.2.42.123
+38.9071,-77.0368,US,United States,Washington,34.150.184.50
+43.6547,-79.3623,CA,Canada,Toronto,146.190.243.137
+39.0438,-77.4874,US,United States,Ashburn,54.91.222.127
+50.7012,3.21501,FR,France,Wattrelos,141.94.3.10
+37.5665,126.978,KR,South Korea,Seoul,52.79.171.57
+38.9071,-77.0368,US,United States,Washington,35.230.160.219
+1.43508,103.804,SG,Singapore,Singapore,72.46.87.185
+39.0438,-77.4874,US,United States,Ashburn,44.197.172.154
 43.6547,-79.3623,CA,Canada,Toronto,159.203.6.120
 49.4423,11.0191,DE,Germany,Nuremberg,152.53.22.28
-41.0416,-73.9572,US,United States,Orangeburg,89.117.78.187
-1.43508,103.804,SG,Singapore,Singapore,72.46.87.185
-38.9071,-77.0368,US,United States,Washington,34.86.98.243
-39.018,-77.539,US,United States,Ashburn,150.136.127.40
-43.6547,-79.3623,CA,Canada,Toronto,167.99.181.226
-50.9009,4.4855,BE,Belgium,Brussels,34.78.19.124
-51.5123,-0.0909,GB,United Kingdom,London,67.209.52.73
-38.9071,-77.0368,US,United States,Washington,34.150.184.50
-51.5074,-0.1196,GB,United Kingdom,London,198.244.253.241
 -23.5335,-46.6359,BR,Brazil,São Paulo,177.54.147.193
-60.1797,24.9344,FI,Finland,Helsinki,65.109.125.211
-32.8771,-80.013,US,United States,North Charleston,35.185.91.239
-39.0438,-77.4874,US,United States,Ashburn,44.197.172.154
+51.5123,-0.0909,GB,United Kingdom,London,67.209.52.73
+43.6547,-79.3623,CA,Canada,Toronto,143.198.46.130
 51.5074,-0.1196,GB,United Kingdom,London,198.244.179.99
-50.9009,4.4855,BE,Belgium,Brussels,35.189.230.146
-38.9071,-77.0368,US,United States,Washington,35.230.160.219
-40.0992,-83.1141,US,United States,Dublin,3.132.241.37
-43.6547,-79.3623,CA,Canada,Toronto,159.203.0.182
-50.1101,8.6721,DE,Germany,Frankfurt am Main,57.129.52.183
+51.5074,-0.1196,GB,United Kingdom,London,198.244.253.241
 51.4808,0.174675,GB,United Kingdom,Erith,57.128.188.88
-48.5734,7.75211,FR,France,Strasbourg,162.19.43.6
-40.0992,-83.1141,US,United States,Dublin,3.131.66.186
+39.0438,-77.4874,US,United States,Ashburn,54.196.32.74
+48.5734,7.75211,FR,France,Strasbourg,91.134.22.4
+50.1109,8.68213,DE,Germany,Frankfurt am Main,52.58.243.225
+50.3986,8.07958,DE,Germany,Limburg an der Lahn,141.95.124.216
+50.9009,4.4855,BE,Belgium,Brussels,34.78.19.124
+41.0416,-73.9572,US,United States,Orangeburg,89.117.78.187
