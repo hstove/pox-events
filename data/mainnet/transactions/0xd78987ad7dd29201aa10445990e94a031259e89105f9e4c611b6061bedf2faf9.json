@@ -1,0 +1,76 @@
+{
+  "tx_id": "0xd78987ad7dd29201aa10445990e94a031259e89105f9e4c611b6061bedf2faf9",
+  "nonce": 7269,
+  "fee_rate": "10000",
+  "sender_address": "SP1K1A1PMGW2ZJCNF46NWZWHG8TS1D23EGH1KNK60",
+  "sponsored": false,
+  "post_condition_mode": "allow",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "block_hash": "0x4685166af128eabc7c52e53d8e6db3e12e95506fe46c23908a2d4a29e253733d",
+  "block_height": 306591,
+  "block_time": 1733654583,
+  "block_time_iso": "2024-12-08T10:43:03.000Z",
+  "burn_block_time": 1733654383,
+  "burn_block_height": 873783,
+  "burn_block_time_iso": "2024-12-08T10:39:43.000Z",
+  "parent_burn_block_time": 1733654383,
+  "parent_burn_block_time_iso": "2024-12-08T10:39:43.000Z",
+  "canonical": true,
+  "tx_index": 1,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x070b00000001070c000000030b6c6f636b2d616d6f756e74010000000000000000000000003b8b87c007737461636b65720516c9ca75edb76de9a60355ad4d4cc288317e5bdf6012756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000d5e12",
+    "repr": "(ok (list (ok (tuple (lock-amount u999000000) (stacker 'SP34WMXFDPXPYK9G3APPMTK62H0RQWPYZC2DZY7SC) (unlock-burn-height u876050)))))"
+  },
+  "event_count": 2,
+  "parent_block_hash": "0xb07fa18f10558fb3761afcf8239af8c5685a9c90f596878117dcfdfc0f722836",
+  "is_unanchored": false,
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "execution_cost_read_count": 72,
+  "execution_cost_read_length": 326993,
+  "execution_cost_runtime": 822993,
+  "execution_cost_write_count": 4,
+  "execution_cost_write_length": 436,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0xd78987ad7dd29201aa10445990e94a031259e89105f9e4c611b6061bedf2faf9",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e63650100000000000000000000000002508d8d176275726e636861696e2d756e6c6f636b2d68656967687401000000000000000000000000000d55de04646174610c000000070964656c656761746f720616296a283b358830510c486f90c13d924b92a6590e12706f78342d6d756c74692d706f6f6c2d76310c656e642d6379636c652d69640a01000000000000000000000000000000640c657874656e642d636f756e74010000000000000000000000000000000108706f782d616464720c00000002096861736862797465730200000014f39f20b9d2202a705c99c4f8ee8920653473bc1a0776657273696f6e02000000010407737461636b65720516c9ca75edb76de9a60355ad4d4cc288317e5bdf600e73746172742d6379636c652d6964010000000000000000000000000000006312756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000d5e12066c6f636b6564010000000000000000000000003b8b87c0046e616d650d0000001564656c65676174652d737461636b2d657874656e6407737461636b65720516c9ca75edb76de9a60355ad4d4cc288317e5bdf60",
+          "repr": "(ok (tuple (balance u38833549) (burnchain-unlock-height u873950) (data (tuple (delegator 'SPMPMA1V6P430M8C91QS1G9XJ95S59JS1TZFZ4Q4.pox4-multi-pool-v1) (end-cycle-id (some u100)) (extend-count u1) (pox-addr (tuple (hashbytes 0xf39f20b9d2202a705c99c4f8ee8920653473bc1a) (version 0x04))) (stacker 'SP34WMXFDPXPYK9G3APPMTK62H0RQWPYZC2DZY7SC) (start-cycle-id u99) (unlock-burn-height u876050))) (locked u999000000) (name \"delegate-stack-extend\") (stacker 'SP34WMXFDPXPYK9G3APPMTK62H0RQWPYZC2DZY7SC)))"
+        }
+      }
+    },
+    {
+      "event_index": 1,
+      "event_type": "stx_lock",
+      "tx_id": "0xd78987ad7dd29201aa10445990e94a031259e89105f9e4c611b6061bedf2faf9",
+      "stx_lock_event": {
+        "locked_amount": "999000000",
+        "unlock_height": 876050,
+        "locked_address": "SP34WMXFDPXPYK9G3APPMTK62H0RQWPYZC2DZY7SC"
+      }
+    }
+  ],
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SPMPMA1V6P430M8C91QS1G9XJ95S59JS1TZFZ4Q4.pox4-multi-pool-v1",
+    "function_name": "delegate-stack-stx-many",
+    "function_signature": "(define-public (delegate-stack-stx-many (users (list 30 principal))))",
+    "function_args": [
+      {
+        "hex": "0x0b000000010516c9ca75edb76de9a60355ad4d4cc288317e5bdf60",
+        "repr": "(list 'SP34WMXFDPXPYK9G3APPMTK62H0RQWPYZC2DZY7SC)",
+        "name": "users",
+        "type": "(list 30 principal)"
+      }
+    ]
+  }
+}
