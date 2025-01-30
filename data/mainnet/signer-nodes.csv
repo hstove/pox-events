@@ -1,45 +1,44 @@
 latitude,longitude,Country Code,Country,City,IP Address
-30.4485,-91.13,US,United States,Baton Rouge,69.2.42.123
-38.9071,-77.0368,US,United States,Washington,34.86.98.243
-50.9009,4.4855,BE,Belgium,Brussels,34.78.19.124
 1.28009,103.851,SG,Singapore,Singapore,52.77.118.154
-39.0438,-77.4874,US,United States,Ashburn,54.80.131.114
-43.6547,-79.3623,CA,Canada,Toronto,143.198.46.130
-43.6547,-79.3623,CA,Canada,Toronto,159.203.6.120
-38.9071,-77.0368,US,United States,Washington,35.230.160.219
-48.1951,16.3483,AT,Austria,Vienna,89.58.16.139
-39.0438,-77.4874,US,United States,Ashburn,52.0.54.100
-43.6547,-79.3623,CA,Canada,Toronto,159.203.21.252
-43.6547,-79.3623,CA,Canada,Toronto,159.203.0.182
--23.5475,-46.6361,BR,Brazil,São Paulo,177.54.147.193
-40.0992,-83.1141,US,United States,Dublin,3.131.66.186
-51.4808,0.174675,GB,United Kingdom,Erith,57.128.188.88
-41.0416,-73.9572,US,United States,Orangeburg,89.117.78.187
-49.4423,11.0191,DE,Germany,Nuremberg,152.53.22.28
-51.5081,-0.1278,GB,United Kingdom,London,198.244.179.99
-60.1719,24.9347,FI,Finland,Helsinki,65.109.125.211
-53.3498,-6.26031,IE,Ireland,Dublin,3.248.198.111
-32.8771,-80.013,US,United States,North Charleston,35.185.91.239
-39.0438,-77.4874,US,United States,Ashburn,54.91.222.127
+50.1245,8.46324,DE,Germany,Kelkheim,185.254.97.213
 37.5665,126.978,KR,South Korea,Seoul,52.79.171.57
-38.9071,-77.0368,US,United States,Washington,34.150.184.50
-51.5164,-0.093,GB,United Kingdom,London,103.50.32.58
-51.5081,-0.1278,GB,United Kingdom,London,198.244.253.241
-50.9959,2.11757,FR,France,Gravelines,91.134.53.221
+48.1951,16.3483,AT,Austria,Vienna,89.58.16.139
 40.0992,-83.1141,US,United States,Dublin,3.132.241.37
-1.32123,103.695,SG,Singapore,Singapore,128.199.83.151
-50.1143,8.6641,DE,Germany,Frankfurt am Main,57.129.52.183
-39.0438,-77.4874,US,United States,Ashburn,54.196.32.74
-50.1109,8.68213,DE,Germany,Frankfurt am Main,45.157.233.110
-43.6547,-79.3623,CA,Canada,Toronto,146.190.243.137
-43.6547,-79.3623,CA,Canada,Toronto,167.99.181.226
+38.9071,-77.0368,US,United States,Washington,34.150.184.50
+53.3498,-6.26031,IE,Ireland,Dublin,3.248.198.111
+50.3986,8.07958,DE,Germany,Limburg an der Lahn,141.95.124.216
+38.9071,-77.0368,US,United States,Washington,34.86.98.243
+51.5081,-0.1278,GB,United Kingdom,London,198.244.179.99
+51.4808,0.174675,GB,United Kingdom,Erith,57.128.188.88
+50.1109,8.68213,DE,Germany,Frankfurt am Main,3.122.176.89
+49.4423,11.0191,DE,Germany,Nuremberg,152.53.22.28
+51.5164,-0.093,GB,United Kingdom,London,103.50.32.58
+51.5123,-0.0909,GB,United Kingdom,London,67.209.52.73
+38.9071,-77.0368,US,United States,Washington,35.230.160.219
+40.0992,-83.1141,US,United States,Dublin,3.131.66.186
+43.6547,-79.3623,CA,Canada,Toronto,143.198.46.130
+60.1719,24.9347,FI,Finland,Helsinki,65.109.125.211
+-23.5475,-46.6361,BR,Brazil,São Paulo,177.54.147.193
+39.0438,-77.4874,US,United States,Ashburn,54.91.222.127
+43.6547,-79.3623,CA,Canada,Toronto,159.203.6.120
+51.5081,-0.1278,GB,United Kingdom,London,198.244.253.241
 50.7012,3.21501,FR,France,Wattrelos,141.94.3.10
-50.1109,8.68213,DE,Germany,Frankfurt am Main,52.58.243.225
+39.0438,-77.4874,US,United States,Ashburn,54.196.32.74
+1.32123,103.695,SG,Singapore,Singapore,128.199.83.151
+39.0438,-77.4874,US,United States,Ashburn,52.0.54.100
+39.0438,-77.4874,US,United States,Ashburn,54.80.131.114
+50.9009,4.4855,BE,Belgium,Brussels,35.189.230.146
+43.6547,-79.3623,CA,Canada,Toronto,159.203.21.252
+50.9959,2.11757,FR,France,Gravelines,91.134.53.221
+43.6547,-79.3623,CA,Canada,Toronto,159.203.45.59
+43.6547,-79.3623,CA,Canada,Toronto,159.203.0.182
+50.9009,4.4855,BE,Belgium,Brussels,34.78.19.124
+30.4485,-91.13,US,United States,Baton Rouge,69.2.42.123
+43.6547,-79.3623,CA,Canada,Toronto,167.99.181.226
+41.0416,-73.9572,US,United States,Orangeburg,89.117.78.187
+32.8771,-80.013,US,United States,North Charleston,35.185.91.239
+50.1143,8.6641,DE,Germany,Frankfurt am Main,57.129.52.183
 39.018,-77.539,US,United States,Ashburn,150.136.127.40
 48.5734,7.75211,FR,France,Strasbourg,91.134.22.4
 48.5734,7.75211,FR,France,Strasbourg,162.19.43.6
-51.5123,-0.0909,GB,United Kingdom,London,67.209.52.73
-50.9009,4.4855,BE,Belgium,Brussels,35.189.230.146
-43.6547,-79.3623,CA,Canada,Toronto,159.203.45.59
-50.1109,8.68213,DE,Germany,Frankfurt am Main,3.122.176.89
-50.3986,8.07958,DE,Germany,Limburg an der Lahn,141.95.124.216
+50.1109,8.68213,DE,Germany,Frankfurt am Main,52.58.243.225
