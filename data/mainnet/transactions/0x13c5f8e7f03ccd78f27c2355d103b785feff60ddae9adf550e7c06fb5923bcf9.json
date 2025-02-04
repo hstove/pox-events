@@ -1,0 +1,79 @@
+{
+  "tx_id": "0x13c5f8e7f03ccd78f27c2355d103b785feff60ddae9adf550e7c06fb5923bcf9",
+  "nonce": 38,
+  "fee_rate": "39263",
+  "sender_address": "SP1R3DY6QA6TFJWFVMCWMF52GGKDJMP58GVC179AH",
+  "sponsored": false,
+  "post_condition_mode": "deny",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "block_hash": "0xa2abb1c4fa04a2072cec892cb4969af22246a754f08fed00f1c1b349de3637bd",
+  "block_height": 559160,
+  "block_time": 1738707289,
+  "block_time_iso": "2025-02-04T22:14:49.000Z",
+  "burn_block_time": 1738705871,
+  "burn_block_height": 882325,
+  "burn_block_time_iso": "2025-02-04T21:51:11.000Z",
+  "parent_burn_block_time": 1738705871,
+  "parent_burn_block_time_iso": "2025-02-04T21:51:11.000Z",
+  "canonical": true,
+  "tx_index": 0,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x0703",
+    "repr": "(ok true)"
+  },
+  "event_count": 2,
+  "parent_block_hash": "0x06c38f9b137f79a2c8a33e143dc0657512df5d6bbbacc9f8a31049b61c7a85ff",
+  "is_unanchored": false,
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "execution_cost_read_count": 25,
+  "execution_cost_read_length": 314542,
+  "execution_cost_runtime": 366217,
+  "execution_cost_write_count": 2,
+  "execution_cost_write_length": 180,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x13c5f8e7f03ccd78f27c2355d103b785feff60ddae9adf550e7c06fb5923bcf9",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e6365010000000000000000000000002687800d176275726e636861696e2d756e6c6f636b2d686569676874010000000000000000000000000000000004646174610c000000030b64656c65676174652d746f0616889c62618b4a30f41fcd39e9cec4d249e5df41ae0b636f6e7472696275746f720c656e642d6379636c652d6964090e73746172742d6379636c652d69640100000000000000000000000000000067066c6f636b65640100000000000000000000000000000000046e616d650d000000137265766f6b652d64656c65676174652d73747807737461636b657205167036f8d751b4f971fba33947945084db2a58a886",
+          "repr": "(ok (tuple (balance u646414349) (burnchain-unlock-height u0) (data (tuple (delegate-to 'SP249RRK1HD531X0ZSMWYKKP4T94YBQT1NSYVFWPQ.contributor) (end-cycle-id none) (start-cycle-id u103))) (locked u0) (name \"revoke-delegate-stx\") (stacker 'SP1R3DY6QA6TFJWFVMCWMF52GGKDJMP58GVC179AH)))"
+        }
+      }
+    },
+    {
+      "event_index": 1,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x13c5f8e7f03ccd78f27c2355d103b785feff60ddae9adf550e7c06fb5923bcf9",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e6365010000000000000000000000002687800d176275726e636861696e2d756e6c6f636b2d686569676874010000000000000000000000000000000004646174610c000000060b616d6f756e742d757374780100000000000000000000000023c346000b64656c65676174652d746f0616889c62618b4a30f41fcd39e9cec4d249e5df41ae0b636f6e7472696275746f720c656e642d6379636c652d69640908706f782d61646472090e73746172742d6379636c652d6964010000000000000000000000000000006812756e6c6f636b2d6275726e2d68656967687409066c6f636b65640100000000000000000000000000000000046e616d650d0000000c64656c65676174652d73747807737461636b657205167036f8d751b4f971fba33947945084db2a58a886",
+          "repr": "(ok (tuple (balance u646414349) (burnchain-unlock-height u0) (data (tuple (amount-ustx u600000000) (delegate-to 'SP249RRK1HD531X0ZSMWYKKP4T94YBQT1NSYVFWPQ.contributor) (end-cycle-id none) (pox-addr none) (start-cycle-id u104) (unlock-burn-height none))) (locked u0) (name \"delegate-stx\") (stacker 'SP1R3DY6QA6TFJWFVMCWMF52GGKDJMP58GVC179AH)))"
+        }
+      }
+    }
+  ],
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP249RRK1HD531X0ZSMWYKKP4T94YBQT1NSYVFWPQ.contributor",
+    "function_name": "contributor-delegate",
+    "function_signature": "(define-public (contributor-delegate (amount-ustx uint)))",
+    "function_args": [
+      {
+        "hex": "0x0100000000000000000000000023c34600",
+        "repr": "u600000000",
+        "name": "amount-ustx",
+        "type": "uint"
+      }
+    ]
+  }
+}
