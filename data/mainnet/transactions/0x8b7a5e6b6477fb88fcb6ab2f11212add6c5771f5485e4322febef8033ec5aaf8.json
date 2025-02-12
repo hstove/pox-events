@@ -1,0 +1,76 @@
+{
+  "tx_id": "0x8b7a5e6b6477fb88fcb6ab2f11212add6c5771f5485e4322febef8033ec5aaf8",
+  "nonce": 40,
+  "fee_rate": "200",
+  "sender_address": "SP1TD3YNH211ZBMY8WXD0YPP905N82HEGTW76ES2J",
+  "sponsored": false,
+  "post_condition_mode": "deny",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "block_hash": "0xba6de0074e6bbe5aa3fccd902c9f94c0d05f204e69cedd7fd304c07c8a8938f8",
+  "block_height": 603336,
+  "block_time": 1739352027,
+  "block_time_iso": "2025-02-12T09:20:27.000Z",
+  "burn_block_time": 1739351571,
+  "burn_block_height": 883407,
+  "burn_block_time_iso": "2025-02-12T09:12:51.000Z",
+  "parent_burn_block_time": 1739351571,
+  "parent_burn_block_time_iso": "2025-02-12T09:12:51.000Z",
+  "canonical": true,
+  "tx_index": 0,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x070c000000030b6c6f636b2d616d6f756e7401000000000000000000000001bef9a8c007737461636b6572051674d1fab11043f5d3c8e75a0f5ac9016a8145d0d712756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000d8716",
+    "repr": "(ok (tuple (lock-amount u7499000000) (stacker 'SP1TD3YNH211ZBMY8WXD0YPP905N82HEGTW76ES2J) (unlock-burn-height u886550)))"
+  },
+  "event_count": 2,
+  "parent_block_hash": "0x5013a0cb8a195cfcd2f120f34295b02eb78e4e6309f65c76ebfbdc10ab9da9a6",
+  "is_unanchored": false,
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "execution_cost_read_count": 73,
+  "execution_cost_read_length": 330164,
+  "execution_cost_runtime": 785288,
+  "execution_cost_write_count": 5,
+  "execution_cost_write_length": 523,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x8b7a5e6b6477fb88fcb6ab2f11212add6c5771f5485e4322febef8033ec5aaf8",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e6365010000000000000000000000000023d610176275726e636861696e2d756e6c6f636b2d68656967687401000000000000000000000000000d7ee204646174610c000000070964656c656761746f72061683ed66860315e334010bbfb76eb3eef887efee0a11706f78342d666173742d706f6f6c2d76330c656e642d6379636c652d69640a01000000000000000000000000000000690c657874656e642d636f756e74010000000000000000000000000000000108706f782d616464720c0000000209686173686279746573020000001483ed66860315e334010bbfb76eb3eef887efee0a0776657273696f6e02000000010407737461636b6572051674d1fab11043f5d3c8e75a0f5ac9016a8145d0d70e73746172742d6379636c652d6964010000000000000000000000000000006812756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000d8716066c6f636b656401000000000000000000000001bef9a8c0046e616d650d0000001564656c65676174652d737461636b2d657874656e6407737461636b6572051674d1fab11043f5d3c8e75a0f5ac9016a8145d0d7",
+          "repr": "(ok (tuple (balance u2348560) (burnchain-unlock-height u884450) (data (tuple (delegator 'SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3) (end-cycle-id (some u105)) (extend-count u1) (pox-addr (tuple (hashbytes 0x83ed66860315e334010bbfb76eb3eef887efee0a) (version 0x04))) (stacker 'SP1TD3YNH211ZBMY8WXD0YPP905N82HEGTW76ES2J) (start-cycle-id u104) (unlock-burn-height u886550))) (locked u7499000000) (name \"delegate-stack-extend\") (stacker 'SP1TD3YNH211ZBMY8WXD0YPP905N82HEGTW76ES2J)))"
+        }
+      }
+    },
+    {
+      "event_index": 1,
+      "event_type": "stx_lock",
+      "tx_id": "0x8b7a5e6b6477fb88fcb6ab2f11212add6c5771f5485e4322febef8033ec5aaf8",
+      "stx_lock_event": {
+        "locked_amount": "7499000000",
+        "unlock_height": 886550,
+        "locked_address": "SP1TD3YNH211ZBMY8WXD0YPP905N82HEGTW76ES2J"
+      }
+    }
+  ],
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3",
+    "function_name": "delegate-stack-stx",
+    "function_signature": "(define-public (delegate-stack-stx (user principal)))",
+    "function_args": [
+      {
+        "hex": "0x051674d1fab11043f5d3c8e75a0f5ac9016a8145d0d7",
+        "repr": "'SP1TD3YNH211ZBMY8WXD0YPP905N82HEGTW76ES2J",
+        "name": "user",
+        "type": "principal"
+      }
+    ]
+  }
+}
