@@ -1,0 +1,76 @@
+{
+  "tx_id": "0xa84d8d0ecfc7b3705c8fa6f9753d0cd995adf512219cdab455a5026e78f177f3",
+  "nonce": 8223,
+  "fee_rate": "1000",
+  "sender_address": "SP1K1A1PMGW2ZJCNF46NWZWHG8TS1D23EGH1KNK60",
+  "sponsored": false,
+  "post_condition_mode": "allow",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "block_hash": "0x7e55def3f2eb074ba329bec1b5ffaa89140db7ee0e08f0b5f633e9925e55ca9b",
+  "block_height": 634119,
+  "block_time": 1739881488,
+  "block_time_iso": "2025-02-18T12:24:48.000Z",
+  "burn_block_time": 1739881199,
+  "burn_block_height": 884313,
+  "burn_block_time_iso": "2025-02-18T12:19:59.000Z",
+  "parent_burn_block_time": 1739881199,
+  "parent_burn_block_time_iso": "2025-02-18T12:19:59.000Z",
+  "canonical": true,
+  "tx_index": 2,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x070b00000001070c000000030b6c6f636b2d616d6f756e7401000000000000000000000002362d399f07737461636b65720516d288041fb93c77074e92b1ba6a9c49c38adb19a412756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000d8716",
+    "repr": "(ok (list (ok (tuple (lock-amount u9498868127) (stacker 'SP398G10ZQ4Y7E1TEJARVMTMW971RNPRSMH5Y2CC2) (unlock-burn-height u886550)))))"
+  },
+  "event_count": 2,
+  "parent_block_hash": "0x486a21170ada4966b04b165a5f17a1e2f405264aa34b6445aadc829216511904",
+  "is_unanchored": false,
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "execution_cost_read_count": 74,
+  "execution_cost_read_length": 330129,
+  "execution_cost_runtime": 832186,
+  "execution_cost_write_count": 5,
+  "execution_cost_write_length": 523,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0xa84d8d0ecfc7b3705c8fa6f9753d0cd995adf512219cdab455a5026e78f177f3",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e63650100000000000000000000000000000000176275726e636861696e2d756e6c6f636b2d68656967687401000000000000000000000000000d7ee204646174610c000000070964656c656761746f72061683ed66860315e334010bbfb76eb3eef887efee0a11706f78342d666173742d706f6f6c2d76330c656e642d6379636c652d69640a01000000000000000000000000000000690c657874656e642d636f756e74010000000000000000000000000000000108706f782d616464720c0000000209686173686279746573020000001483ed66860315e334010bbfb76eb3eef887efee0a0776657273696f6e02000000010407737461636b65720516d288041fb93c77074e92b1ba6a9c49c38adb19a40e73746172742d6379636c652d6964010000000000000000000000000000006812756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000d8716066c6f636b656401000000000000000000000002362d399f046e616d650d0000001564656c65676174652d737461636b2d657874656e6407737461636b65720516d288041fb93c77074e92b1ba6a9c49c38adb19a4",
+          "repr": "(ok (tuple (balance u0) (burnchain-unlock-height u884450) (data (tuple (delegator 'SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3) (end-cycle-id (some u105)) (extend-count u1) (pox-addr (tuple (hashbytes 0x83ed66860315e334010bbfb76eb3eef887efee0a) (version 0x04))) (stacker 'SP398G10ZQ4Y7E1TEJARVMTMW971RNPRSMH5Y2CC2) (start-cycle-id u104) (unlock-burn-height u886550))) (locked u9498868127) (name \"delegate-stack-extend\") (stacker 'SP398G10ZQ4Y7E1TEJARVMTMW971RNPRSMH5Y2CC2)))"
+        }
+      }
+    },
+    {
+      "event_index": 1,
+      "event_type": "stx_lock",
+      "tx_id": "0xa84d8d0ecfc7b3705c8fa6f9753d0cd995adf512219cdab455a5026e78f177f3",
+      "stx_lock_event": {
+        "locked_amount": "9498868127",
+        "unlock_height": 886550,
+        "locked_address": "SP398G10ZQ4Y7E1TEJARVMTMW971RNPRSMH5Y2CC2"
+      }
+    }
+  ],
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3",
+    "function_name": "delegate-stack-stx-many",
+    "function_signature": "(define-public (delegate-stack-stx-many (users (list 30 principal))))",
+    "function_args": [
+      {
+        "hex": "0x0b000000010516d288041fb93c77074e92b1ba6a9c49c38adb19a4",
+        "repr": "(list 'SP398G10ZQ4Y7E1TEJARVMTMW971RNPRSMH5Y2CC2)",
+        "name": "users",
+        "type": "(list 30 principal)"
+      }
+    ]
+  }
+}
