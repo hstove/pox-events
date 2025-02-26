@@ -1,0 +1,20 @@
+{
+  "tx_id": "0x2406ec1dba9a4721edd6284261bdd457e8d8f01ef547e7c59284200ac1bd7287",
+  "nonce": 8,
+  "fee_rate": "22044",
+  "sender_address": "SP2BKVRFVRJ9X3E4YMWJKFFAY4FG91S61GX6N2C8P",
+  "sponsored": false,
+  "post_condition_mode": "deny",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "tx_status": "pending",
+  "receipt_time": 1740582085,
+  "receipt_time_iso": "2025-02-26T15:01:25.000Z",
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+    "function_name": "revoke-delegate-stx",
+    "function_signature": "(define-public (revoke-delegate-stx ))",
+    "function_args": []
+  }
+}
