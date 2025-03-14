@@ -1,0 +1,76 @@
+{
+  "tx_id": "0x8bdfeed79e6095eebd6726d9adac071c9a4b1577d8d4dbe4908c2d7cae199e89",
+  "nonce": 64,
+  "fee_rate": "200",
+  "sender_address": "SP318EJ83GA33NHBATJV81A8QPKYTEJXVAWT3F7X8",
+  "sponsored": false,
+  "post_condition_mode": "deny",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "block_hash": "0x664110d8b48c70b4808b1f901312db6205227922e5491a16fb3b3ba286ee10e3",
+  "block_height": 776378,
+  "block_time": 1741984072,
+  "block_time_iso": "2025-03-14T20:27:52.000Z",
+  "burn_block_time": 1741983730,
+  "burn_block_height": 887814,
+  "burn_block_time_iso": "2025-03-14T20:22:10.000Z",
+  "parent_burn_block_time": 1741983730,
+  "parent_burn_block_time_iso": "2025-03-14T20:22:10.000Z",
+  "canonical": true,
+  "tx_index": 0,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x070c000000030b6c6f636b2d616d6f756e7401000000000000000000000004b2c31ac007737461636b65720516c287490382863ac56ad4b680a917b4fda74bbb5712756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000d977e",
+    "repr": "(ok (tuple (lock-amount u20179000000) (stacker 'SP318EJ83GA33NHBATJV81A8QPKYTEJXVAWT3F7X8) (unlock-burn-height u890750)))"
+  },
+  "event_count": 2,
+  "parent_block_hash": "0x8f66a40e560477eeb36dd8b1c1e115faf1ac381676168d14c7e54a0e0a4356b3",
+  "is_unanchored": false,
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "execution_cost_read_count": 73,
+  "execution_cost_read_length": 330164,
+  "execution_cost_runtime": 785288,
+  "execution_cost_write_count": 5,
+  "execution_cost_write_length": 523,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x8bdfeed79e6095eebd6726d9adac071c9a4b1577d8d4dbe4908c2d7cae199e89",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e6365010000000000000000000000000030309e176275726e636861696e2d756e6c6f636b2d68656967687401000000000000000000000000000d8f4a04646174610c000000070964656c656761746f72061683ed66860315e334010bbfb76eb3eef887efee0a11706f78342d666173742d706f6f6c2d76330c656e642d6379636c652d69640a010000000000000000000000000000006b0c657874656e642d636f756e74010000000000000000000000000000000108706f782d616464720c0000000209686173686279746573020000001483ed66860315e334010bbfb76eb3eef887efee0a0776657273696f6e02000000010407737461636b65720516c287490382863ac56ad4b680a917b4fda74bbb570e73746172742d6379636c652d6964010000000000000000000000000000006a12756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000d977e066c6f636b656401000000000000000000000004b2c31ac0046e616d650d0000001564656c65676174652d737461636b2d657874656e6407737461636b65720516c287490382863ac56ad4b680a917b4fda74bbb57",
+          "repr": "(ok (tuple (balance u3158174) (burnchain-unlock-height u888650) (data (tuple (delegator 'SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3) (end-cycle-id (some u107)) (extend-count u1) (pox-addr (tuple (hashbytes 0x83ed66860315e334010bbfb76eb3eef887efee0a) (version 0x04))) (stacker 'SP318EJ83GA33NHBATJV81A8QPKYTEJXVAWT3F7X8) (start-cycle-id u106) (unlock-burn-height u890750))) (locked u20179000000) (name \"delegate-stack-extend\") (stacker 'SP318EJ83GA33NHBATJV81A8QPKYTEJXVAWT3F7X8)))"
+        }
+      }
+    },
+    {
+      "event_index": 1,
+      "event_type": "stx_lock",
+      "tx_id": "0x8bdfeed79e6095eebd6726d9adac071c9a4b1577d8d4dbe4908c2d7cae199e89",
+      "stx_lock_event": {
+        "locked_amount": "20179000000",
+        "unlock_height": 890750,
+        "locked_address": "SP318EJ83GA33NHBATJV81A8QPKYTEJXVAWT3F7X8"
+      }
+    }
+  ],
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3",
+    "function_name": "delegate-stack-stx",
+    "function_signature": "(define-public (delegate-stack-stx (user principal)))",
+    "function_args": [
+      {
+        "hex": "0x0516c287490382863ac56ad4b680a917b4fda74bbb57",
+        "repr": "'SP318EJ83GA33NHBATJV81A8QPKYTEJXVAWT3F7X8",
+        "name": "user",
+        "type": "principal"
+      }
+    ]
+  }
+}
