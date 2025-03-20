@@ -1,0 +1,59 @@
+{
+  "tx_id": "0x080a1c0d56def490afd968f969d84b2b3d6e5d2d2c7666ca9b50e3635a360fd0",
+  "nonce": 4,
+  "fee_rate": "167",
+  "sender_address": "SP1WBT2BYP87X2HHX6EBSVMMJATP9SSNDWQ16F51X",
+  "sponsored": false,
+  "post_condition_mode": "deny",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "block_hash": "0x30e86503223d0d8b1409ed2885d892537e0671d6a291aa9d97c433b002d56168",
+  "block_height": 813884,
+  "block_time": 1742511599,
+  "block_time_iso": "2025-03-20T22:59:59.000Z",
+  "burn_block_time": 1742511520,
+  "burn_block_height": 888683,
+  "burn_block_time_iso": "2025-03-20T22:58:40.000Z",
+  "parent_burn_block_time": 1742511520,
+  "parent_burn_block_time_iso": "2025-03-20T22:58:40.000Z",
+  "canonical": true,
+  "tx_index": 1,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x070a0c000000040b616d6f756e742d75737478010000000000000000000000000f32fdc00c64656c6567617465642d746f05163bbc65d112e79ea9d2001e15f8a615885695d8b608706f782d61646472090d756e74696c2d6275726e2d687409",
+    "repr": "(ok (some (tuple (amount-ustx u255000000) (delegated-to 'SPXVRSEH2BKSXAEJ00F1BY562P45D5ERPSKR4Q33) (pox-addr none) (until-burn-ht none))))"
+  },
+  "event_count": 1,
+  "parent_block_hash": "0x49399fb5b47a85fe4135d52b501b74b1c2afdf3da8e9fe6af67222213497660c",
+  "is_unanchored": false,
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "execution_cost_read_count": 5,
+  "execution_cost_read_length": 77105,
+  "execution_cost_runtime": 92868,
+  "execution_cost_write_count": 1,
+  "execution_cost_write_length": 37,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x080a1c0d56def490afd968f969d84b2b3d6e5d2d2c7666ca9b50e3635a360fd0",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e636501000000000000000000000000002f6a34176275726e636861696e2d756e6c6f636b2d68656967687401000000000000000000000000000d977e04646174610c000000030b64656c65676174652d746f05163bbc65d112e79ea9d2001e15f8a615885695d8b60c656e642d6379636c652d6964090e73746172742d6379636c652d6964010000000000000000000000000000006b066c6f636b6564010000000000000000000000000f23bb80046e616d650d000000137265766f6b652d64656c65676174652d73747807737461636b6572051678bd097eb20fd1463d33979dd29256ac9ce6ade5",
+          "repr": "(ok (tuple (balance u3107380) (burnchain-unlock-height u890750) (data (tuple (delegate-to 'SPXVRSEH2BKSXAEJ00F1BY562P45D5ERPSKR4Q33) (end-cycle-id none) (start-cycle-id u107))) (locked u254000000) (name \"revoke-delegate-stx\") (stacker 'SP1WBT2BYP87X2HHX6EBSVMMJATP9SSNDWQ16F51X)))"
+        }
+      }
+    }
+  ],
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+    "function_name": "revoke-delegate-stx",
+    "function_signature": "(define-public (revoke-delegate-stx ))",
+    "function_args": []
+  }
+}
