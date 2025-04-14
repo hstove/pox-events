@@ -1,0 +1,76 @@
+{
+  "tx_id": "0x0ec776b14845974ab2f76408ec5607dc7cdf87a73db035ffafaa326a7eae18bf",
+  "nonce": 8878,
+  "fee_rate": "1000",
+  "sender_address": "SP1K1A1PMGW2ZJCNF46NWZWHG8TS1D23EGH1KNK60",
+  "sponsored": false,
+  "post_condition_mode": "allow",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "block_hash": "0xeec3558e00c5c688c4cbe7c65abd4f1971a4b6351140c13077d688896954214b",
+  "block_height": 968133,
+  "block_time": 1744625306,
+  "block_time_iso": "2025-04-14T10:08:26.000Z",
+  "burn_block_time": 1744625124,
+  "burn_block_height": 892362,
+  "burn_block_time_iso": "2025-04-14T10:05:24.000Z",
+  "parent_burn_block_time": 1744625124,
+  "parent_burn_block_time_iso": "2025-04-14T10:05:24.000Z",
+  "canonical": true,
+  "tx_index": 2,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x070b00000001070c000000030b6c6f636b2d616d6f756e7401000000000000000000000001a12c43c007737461636b65720516007e2a92ca15a683c997e99a7670ab0fa5c6436812756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000da7e6",
+    "repr": "(ok (list (ok (tuple (lock-amount u6999000000) (stacker 'SP07WAMJS8ATD0Y9JZMSMXKGNC7TBHJ3D16DZMAV) (unlock-burn-height u894950)))))"
+  },
+  "event_count": 2,
+  "parent_block_hash": "0xa8ff39ad33c3e499ea08abf52246c148ada5e4fbde7844384581096a69db401a",
+  "is_unanchored": false,
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "execution_cost_read_count": 74,
+  "execution_cost_read_length": 330166,
+  "execution_cost_runtime": 833959,
+  "execution_cost_write_count": 5,
+  "execution_cost_write_length": 523,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x0ec776b14845974ab2f76408ec5607dc7cdf87a73db035ffafaa326a7eae18bf",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e6365010000000000000000000000000c89a29e176275726e636861696e2d756e6c6f636b2d68656967687401000000000000000000000000000d9fb204646174610c000000070964656c656761746f72061683ed66860315e334010bbfb76eb3eef887efee0a11706f78342d666173742d706f6f6c2d76330c656e642d6379636c652d69640a010000000000000000000000000000006d0c657874656e642d636f756e74010000000000000000000000000000000108706f782d616464720c0000000209686173686279746573020000001483ed66860315e334010bbfb76eb3eef887efee0a0776657273696f6e02000000010407737461636b65720516007e2a92ca15a683c997e99a7670ab0fa5c643680e73746172742d6379636c652d6964010000000000000000000000000000006c12756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000da7e6066c6f636b656401000000000000000000000001a12c43c0046e616d650d0000001564656c65676174652d737461636b2d657874656e6407737461636b65720516007e2a92ca15a683c997e99a7670ab0fa5c64368",
+          "repr": "(ok (tuple (balance u210346654) (burnchain-unlock-height u892850) (data (tuple (delegator 'SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3) (end-cycle-id (some u109)) (extend-count u1) (pox-addr (tuple (hashbytes 0x83ed66860315e334010bbfb76eb3eef887efee0a) (version 0x04))) (stacker 'SP07WAMJS8ATD0Y9JZMSMXKGNC7TBHJ3D16DZMAV) (start-cycle-id u108) (unlock-burn-height u894950))) (locked u6999000000) (name \"delegate-stack-extend\") (stacker 'SP07WAMJS8ATD0Y9JZMSMXKGNC7TBHJ3D16DZMAV)))"
+        }
+      }
+    },
+    {
+      "event_index": 1,
+      "event_type": "stx_lock",
+      "tx_id": "0x0ec776b14845974ab2f76408ec5607dc7cdf87a73db035ffafaa326a7eae18bf",
+      "stx_lock_event": {
+        "locked_amount": "6999000000",
+        "unlock_height": 894950,
+        "locked_address": "SP07WAMJS8ATD0Y9JZMSMXKGNC7TBHJ3D16DZMAV"
+      }
+    }
+  ],
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3",
+    "function_name": "delegate-stack-stx-many",
+    "function_signature": "(define-public (delegate-stack-stx-many (users (list 30 principal))))",
+    "function_args": [
+      {
+        "hex": "0x0b000000010516007e2a92ca15a683c997e99a7670ab0fa5c64368",
+        "repr": "(list 'SP07WAMJS8ATD0Y9JZMSMXKGNC7TBHJ3D16DZMAV)",
+        "name": "users",
+        "type": "(list 30 principal)"
+      }
+    ]
+  }
+}
