@@ -1,0 +1,79 @@
+{
+  "tx_id": "0x26ae303180041f42872ef21c4bc7f1663e768ada16edf26f571c26272a2c5fd8",
+  "nonce": 89,
+  "fee_rate": "3000",
+  "sender_address": "SP280DRZXAH0KA8C1CCPEHD5Q0XTF9SFC5M7BRKXX",
+  "sponsored": false,
+  "post_condition_mode": "deny",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "block_hash": "0xc75bd4cf8fb361cad569ce1057fe2231a3790c238f2b430a9c8e1f7846f878a1",
+  "block_height": 1020063,
+  "block_time": 1745444507,
+  "block_time_iso": "2025-04-23T21:41:47.000Z",
+  "burn_block_time": 1745444034,
+  "burn_block_height": 893684,
+  "burn_block_time_iso": "2025-04-23T21:33:54.000Z",
+  "parent_burn_block_time": 1745444034,
+  "parent_burn_block_time_iso": "2025-04-23T21:33:54.000Z",
+  "canonical": true,
+  "tx_index": 1,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x0703",
+    "repr": "(ok true)"
+  },
+  "event_count": 2,
+  "parent_block_hash": "0xcf98de18d090d952e0babefbb663c0d8f9bb924af2d725253e12860037479c23",
+  "is_unanchored": false,
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "execution_cost_read_count": 25,
+  "execution_cost_read_length": 314530,
+  "execution_cost_runtime": 366205,
+  "execution_cost_write_count": 2,
+  "execution_cost_write_length": 180,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x26ae303180041f42872ef21c4bc7f1663e768ada16edf26f571c26272a2c5fd8",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e63650100000000000000000000000000095b41176275726e636861696e2d756e6c6f636b2d686569676874010000000000000000000000000000000004646174610c000000030b64656c65676174652d746f05163bbc65d112e79ea9d2001e15f8a615885695d8b60c656e642d6379636c652d6964090e73746172742d6379636c652d6964010000000000000000000000000000006d066c6f636b65640100000000000000000000000000000000046e616d650d000000137265766f6b652d64656c65676174652d73747807737461636b657205169006e3fd5441352181632ce8b4b70774f4e5ec2d",
+          "repr": "(ok (tuple (balance u613185) (burnchain-unlock-height u0) (data (tuple (delegate-to 'SPXVRSEH2BKSXAEJ00F1BY562P45D5ERPSKR4Q33) (end-cycle-id none) (start-cycle-id u109))) (locked u0) (name \"revoke-delegate-stx\") (stacker 'SP280DRZXAH0KA8C1CCPEHD5Q0XTF9SFC5M7BRKXX)))"
+        }
+      }
+    },
+    {
+      "event_index": 1,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x26ae303180041f42872ef21c4bc7f1663e768ada16edf26f571c26272a2c5fd8",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e63650100000000000000000000000000095b41176275726e636861696e2d756e6c6f636b2d686569676874010000000000000000000000000000000004646174610c000000060b616d6f756e742d757374780100000000000000000000000000004af10b64656c65676174652d746f0616889c62618b4a30f41fcd39e9cec4d249e5df41ae0b636f6e7472696275746f720c656e642d6379636c652d69640908706f782d61646472090e73746172742d6379636c652d6964010000000000000000000000000000006d12756e6c6f636b2d6275726e2d68656967687409066c6f636b65640100000000000000000000000000000000046e616d650d0000000c64656c65676174652d73747807737461636b657205169006e3fd5441352181632ce8b4b70774f4e5ec2d",
+          "repr": "(ok (tuple (balance u613185) (burnchain-unlock-height u0) (data (tuple (amount-ustx u19185) (delegate-to 'SP249RRK1HD531X0ZSMWYKKP4T94YBQT1NSYVFWPQ.contributor) (end-cycle-id none) (pox-addr none) (start-cycle-id u109) (unlock-burn-height none))) (locked u0) (name \"delegate-stx\") (stacker 'SP280DRZXAH0KA8C1CCPEHD5Q0XTF9SFC5M7BRKXX)))"
+        }
+      }
+    }
+  ],
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP249RRK1HD531X0ZSMWYKKP4T94YBQT1NSYVFWPQ.contributor",
+    "function_name": "contributor-delegate",
+    "function_signature": "(define-public (contributor-delegate (amount-ustx uint)))",
+    "function_args": [
+      {
+        "hex": "0x0100000000000000000000000000004af1",
+        "repr": "u19185",
+        "name": "amount-ustx",
+        "type": "uint"
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "tx_id": "0x41848a822a141ed4444f29a19e5c82d6ec1719adb66c24a18fda1b271b2bec47",
+  "nonce": 9064,
+  "fee_rate": "1000",
+  "sender_address": "SP1K1A1PMGW2ZJCNF46NWZWHG8TS1D23EGH1KNK60",
+  "sponsored": false,
+  "post_condition_mode": "allow",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "block_hash": "0xe5ecf38e967882e4230d6dc8bddd8bb8c2cd91ec79ae7f1d9754fb9aef796b64",
+  "block_height": 1168588,
+  "block_time": 1747258268,
+  "block_time_iso": "2025-05-14T21:31:08.000Z",
+  "burn_block_time": 1747258097,
+  "burn_block_height": 896728,
+  "burn_block_time_iso": "2025-05-14T21:28:17.000Z",
+  "parent_burn_block_time": 1747258097,
+  "parent_burn_block_time_iso": "2025-05-14T21:28:17.000Z",
+  "canonical": true,
+  "tx_index": 1,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x070b0000000508010000000000000000000000000000025b08010000000000000000000000000000025b08010000000000000000000000000000025b08010000000000000000000000000000025b070c000000030b6c6f636b2d616d6f756e74010000000000000000000000000bdc7fc007737461636b6572051662d4c73344ed5ff10e0af5b05cdaa658c23e4fa712756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000db84e",
+    "repr": "(ok (list (err u603) (err u603) (err u603) (err u603) (ok (tuple (lock-amount u199000000) (stacker 'SP1HD9HSK8KPNZW8E1BTV0Q6TMSCC4FJFMWE6QEW9) (unlock-burn-height u899150)))))"
+  },
+  "event_count": 2,
+  "parent_block_hash": "0x37e467b3e35ced9201ed4a6a8805f91d0d96394160b27b5fafe36a3a98c86070",
+  "is_unanchored": false,
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "execution_cost_read_count": 212,
+  "execution_cost_read_length": 1254093,
+  "execution_cost_runtime": 2357861,
+  "execution_cost_write_count": 8,
+  "execution_cost_write_length": 440,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x41848a822a141ed4444f29a19e5c82d6ec1719adb66c24a18fda1b271b2bec47",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e636501000000000000000000000000001e78c8176275726e636861696e2d756e6c6f636b2d68656967687401000000000000000000000000000db01a04646174610c000000070964656c656761746f720616296a283b358830510c486f90c13d924b92a6590e12706f78342d6d756c74692d706f6f6c2d76310c656e642d6379636c652d69640a010000000000000000000000000000006f0c657874656e642d636f756e74010000000000000000000000000000000108706f782d616464720c00000002096861736862797465730200000014f39f20b9d2202a705c99c4f8ee8920653473bc1a0776657273696f6e02000000010407737461636b6572051662d4c73344ed5ff10e0af5b05cdaa658c23e4fa70e73746172742d6379636c652d6964010000000000000000000000000000006e12756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000db84e066c6f636b6564010000000000000000000000000bdc7fc0046e616d650d0000001564656c65676174652d737461636b2d657874656e6407737461636b6572051662d4c73344ed5ff10e0af5b05cdaa658c23e4fa7",
+          "repr": "(ok (tuple (balance u1997000) (burnchain-unlock-height u897050) (data (tuple (delegator 'SPMPMA1V6P430M8C91QS1G9XJ95S59JS1TZFZ4Q4.pox4-multi-pool-v1) (end-cycle-id (some u111)) (extend-count u1) (pox-addr (tuple (hashbytes 0xf39f20b9d2202a705c99c4f8ee8920653473bc1a) (version 0x04))) (stacker 'SP1HD9HSK8KPNZW8E1BTV0Q6TMSCC4FJFMWE6QEW9) (start-cycle-id u110) (unlock-burn-height u899150))) (locked u199000000) (name \"delegate-stack-extend\") (stacker 'SP1HD9HSK8KPNZW8E1BTV0Q6TMSCC4FJFMWE6QEW9)))"
+        }
+      }
+    },
+    {
+      "event_index": 1,
+      "event_type": "stx_lock",
+      "tx_id": "0x41848a822a141ed4444f29a19e5c82d6ec1719adb66c24a18fda1b271b2bec47",
+      "stx_lock_event": {
+        "locked_amount": "199000000",
+        "unlock_height": 899150,
+        "locked_address": "SP1HD9HSK8KPNZW8E1BTV0Q6TMSCC4FJFMWE6QEW9"
+      }
+    }
+  ],
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SPMPMA1V6P430M8C91QS1G9XJ95S59JS1TZFZ4Q4.pox4-multi-pool-v1",
+    "function_name": "delegate-stack-stx-many",
+    "function_signature": "(define-public (delegate-stack-stx-many (users (list 30 principal))))",
+    "function_args": [
+      {
+        "hex": "0x0b000000050516c9ca75edb76de9a60355ad4d4cc288317e5bdf60051605962fd52c7a4e72d230207ccebd688c1a1f9011051655452d86e096293bc934f356ba797be740582fc1051655c30e0fa7a487e9dc6c20d853edc1d4d1e50edb051662d4c73344ed5ff10e0af5b05cdaa658c23e4fa7",
+        "repr": "(list 'SP34WMXFDPXPYK9G3APPMTK62H0RQWPYZC2DZY7SC 'SP2SCBYN5HX4WWPJ60G7SKNXD261M7WG24DSD5TQ 'SP1AMABC6W2B2JEY96KSNDEKSFFKM0P1FR78KBWPY 'SP1AW63GFMYJ8FTEWDGGDGMZDR7AD3S8EVE382QNQ 'SP1HD9HSK8KPNZW8E1BTV0Q6TMSCC4FJFMWE6QEW9)",
+        "name": "users",
+        "type": "(list 30 principal)"
+      }
+    ]
+  }
+}
