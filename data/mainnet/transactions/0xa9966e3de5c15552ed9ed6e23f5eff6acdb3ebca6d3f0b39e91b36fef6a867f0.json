@@ -1,0 +1,103 @@
+{
+  "tx_id": "0xa9966e3de5c15552ed9ed6e23f5eff6acdb3ebca6d3f0b39e91b36fef6a867f0",
+  "nonce": 164,
+  "fee_rate": "405",
+  "sender_address": "SP2A2HGHMS3EQYRS8E0ACQ64DMS3P6C57A6VBE45V",
+  "sponsored": false,
+  "post_condition_mode": "deny",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "block_hash": "0xe685fff842cdfcfdb959c15f905677bfc6542f0f6ccdaf9ec65bdb31c8cbdf58",
+  "block_height": 1295237,
+  "block_time": 1748293156,
+  "block_time_iso": "2025-05-26T20:59:16.000Z",
+  "burn_block_time": 1748292929,
+  "burn_block_height": 898495,
+  "burn_block_time_iso": "2025-05-26T20:55:29.000Z",
+  "parent_burn_block_time": 1748292929,
+  "parent_burn_block_time_iso": "2025-05-26T20:55:29.000Z",
+  "canonical": true,
+  "tx_index": 1,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x0703",
+    "repr": "(ok true)"
+  },
+  "event_count": 1,
+  "parent_block_hash": "0x24eeffb1728bec9ee152de7440e108356b1878f99b739e0158fce053b9b50df6",
+  "is_unanchored": false,
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "execution_cost_read_count": 16,
+  "execution_cost_read_length": 77708,
+  "execution_cost_runtime": 183365,
+  "execution_cost_write_count": 5,
+  "execution_cost_write_length": 825,
+  "vm_error": null,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0xa9966e3de5c15552ed9ed6e23f5eff6acdb3ebca6d3f0b39e91b36fef6a867f0",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e636501000000000000000000000000043b7e0a176275726e636861696e2d756e6c6f636b2d686569676874010000000000000000000000000000000004646174610c0000000b0b616d6f756e742d75737478010000000000000000000000007735940007617574682d696401000000000000000000000000000099580964656c656761746f7205169428c234c8dd7f63287014cb988da6476330a7510c656e642d6379636c652d69640a01000000000000000000000000000000700a6d61782d616d6f756e7401ffffffffffffffffffffffffffffffff08706f782d616464720c00000002096861736862797465730200000014eb1cbac56fe9f54cfe4b0b93e9a1d7da4147158f0776657273696f6e0200000001040c7265776172642d6379636c65010000000000000000000000000000006f127265776172642d6379636c652d696e64657801000000000000000000000000000000110a7369676e65722d6b6579020000002103115cb2254a9ad4a32bbe043acf57411d32ea74b05ddf6e850a0b11dbe0f553700a7369676e65722d7369670a0200000041c5cb14b7f62f074cdef47a164f4b552fd459382b26ae2b9f57d9117b281aa9662dade56211c6ab2cec2aef6aa71931a6c7bea24280792b75363035f9b0866fd6010e73746172742d6379636c652d6964010000000000000000000000000000006f066c6f636b65640100000000000000000000000000000000046e616d650d0000001a737461636b2d6167677265676174696f6e2d696e63726561736507737461636b657205169428c234c8dd7f63287014cb988da6476330a751",
+          "repr": "(ok (tuple (balance u71007754) (burnchain-unlock-height u0) (data (tuple (amount-ustx u2000000000) (auth-id u39256) (delegator 'SP2A2HGHMS3EQYRS8E0ACQ64DMS3P6C57A6VBE45V) (end-cycle-id (some u112)) (max-amount u340282366920938463463374607431768211455) (pox-addr (tuple (hashbytes 0xeb1cbac56fe9f54cfe4b0b93e9a1d7da4147158f) (version 0x04))) (reward-cycle u111) (reward-cycle-index u17) (signer-key 0x03115cb2254a9ad4a32bbe043acf57411d32ea74b05ddf6e850a0b11dbe0f55370) (signer-sig (some 0xc5cb14b7f62f074cdef47a164f4b552fd459382b26ae2b9f57d9117b281aa9662dade56211c6ab2cec2aef6aa71931a6c7bea24280792b75363035f9b0866fd601)) (start-cycle-id u111))) (locked u0) (name \"stack-aggregation-increase\") (stacker 'SP2A2HGHMS3EQYRS8E0ACQ64DMS3P6C57A6VBE45V)))"
+        }
+      }
+    }
+  ],
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+    "function_name": "stack-aggregation-increase",
+    "function_signature": "(define-public (stack-aggregation-increase (pox-addr (tuple (hashbytes (buff 32)) (version (buff 1)))) (reward-cycle uint) (reward-cycle-index uint) (signer-sig (optional (buff 65))) (signer-key (buff 33)) (max-amount uint) (auth-id uint)))",
+    "function_args": [
+      {
+        "hex": "0x0c00000002096861736862797465730200000014eb1cbac56fe9f54cfe4b0b93e9a1d7da4147158f0776657273696f6e020000000104",
+        "repr": "(tuple (hashbytes 0xeb1cbac56fe9f54cfe4b0b93e9a1d7da4147158f) (version 0x04))",
+        "name": "pox-addr",
+        "type": "(tuple (hashbytes (buff 32)) (version (buff 1)))"
+      },
+      {
+        "hex": "0x010000000000000000000000000000006f",
+        "repr": "u111",
+        "name": "reward-cycle",
+        "type": "uint"
+      },
+      {
+        "hex": "0x0100000000000000000000000000000011",
+        "repr": "u17",
+        "name": "reward-cycle-index",
+        "type": "uint"
+      },
+      {
+        "hex": "0x0a0200000041c5cb14b7f62f074cdef47a164f4b552fd459382b26ae2b9f57d9117b281aa9662dade56211c6ab2cec2aef6aa71931a6c7bea24280792b75363035f9b0866fd601",
+        "repr": "(some 0xc5cb14b7f62f074cdef47a164f4b552fd459382b26ae2b9f57d9117b281aa9662dade56211c6ab2cec2aef6aa71931a6c7bea24280792b75363035f9b0866fd601)",
+        "name": "signer-sig",
+        "type": "(optional (buff 65))"
+      },
+      {
+        "hex": "0x020000002103115cb2254a9ad4a32bbe043acf57411d32ea74b05ddf6e850a0b11dbe0f55370",
+        "repr": "0x03115cb2254a9ad4a32bbe043acf57411d32ea74b05ddf6e850a0b11dbe0f55370",
+        "name": "signer-key",
+        "type": "(buff 33)"
+      },
+      {
+        "hex": "0x01ffffffffffffffffffffffffffffffff",
+        "repr": "u340282366920938463463374607431768211455",
+        "name": "max-amount",
+        "type": "uint"
+      },
+      {
+        "hex": "0x0100000000000000000000000000009958",
+        "repr": "u39256",
+        "name": "auth-id",
+        "type": "uint"
+      }
+    ]
+  }
+}
