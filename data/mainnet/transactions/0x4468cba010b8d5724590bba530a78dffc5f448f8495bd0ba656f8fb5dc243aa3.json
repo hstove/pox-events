@@ -1,0 +1,97 @@
+{
+  "tx_id": "0x4468cba010b8d5724590bba530a78dffc5f448f8495bd0ba656f8fb5dc243aa3",
+  "nonce": 1927,
+  "fee_rate": "3000",
+  "sender_address": "SP23DZ9XYT3YNF70MHAV9Y3622H8B3DX10WMWT2T9",
+  "sponsored": false,
+  "post_condition_mode": "deny",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "block_hash": "0xa61056baa736cfb91499c72a7142d7d4121003c110230065cca447c36628ee3b",
+  "block_height": 1928984,
+  "block_time": 1751230991,
+  "block_time_iso": "2025-06-29T21:03:11.000Z",
+  "burn_block_time": 1751230886,
+  "burn_block_height": 903286,
+  "burn_block_time_iso": "2025-06-29T21:01:26.000Z",
+  "parent_burn_block_time": 1751230886,
+  "parent_burn_block_time_iso": "2025-06-29T21:01:26.000Z",
+  "canonical": true,
+  "tx_index": 0,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x0703",
+    "repr": "(ok true)"
+  },
+  "event_count": 1,
+  "parent_block_hash": "0x24b71d7ffed792cfa0fbd07a0050bdf9a6a9af315c252bf7cc235407dd524232",
+  "is_unanchored": false,
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "execution_cost_read_count": 16,
+  "execution_cost_read_length": 175305,
+  "execution_cost_runtime": 227926,
+  "execution_cost_write_count": 2,
+  "execution_cost_write_length": 246,
+  "vm_error": null,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x4468cba010b8d5724590bba530a78dffc5f448f8495bd0ba656f8fb5dc243aa3",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e6365010000000000000000000000018992000f176275726e636861696e2d756e6c6f636b2d686569676874010000000000000000000000000000000004646174610c000000060b616d6f756e742d757374780100000000000000000000000135f1b4000b64656c65676174652d746f0516099fb88926d82f30b2f40eaf3ee423cb725bdb3b0c656e642d6379636c652d69640908706f782d61646472090e73746172742d6379636c652d6964010000000000000000000000000000007212756e6c6f636b2d6275726e2d68656967687409066c6f636b65640100000000000000000000000000000000046e616d650d0000000c64656c65676174652d73747807737461636b6572051686dfa7bed0fd579c148ab69f0cc21450b1b7a107",
+          "repr": "(ok (tuple (balance u6603014159) (burnchain-unlock-height u0) (data (tuple (amount-ustx u5200000000) (delegate-to 'SP4SZE494VC2YC5JYG7AYFQ44F5Q4PYV7DVMDPBG) (end-cycle-id none) (pox-addr none) (start-cycle-id u114) (unlock-burn-height none))) (locked u0) (name \"delegate-stx\") (stacker 'SP23DZ9XYT3YNF70MHAV9Y3622H8B3DX10WMWT2T9)))"
+        }
+      }
+    }
+  ],
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP4SZE494VC2YC5JYG7AYFQ44F5Q4PYV7DVMDPBG.native-stacking-pool-v1",
+    "function_name": "delegate-stx",
+    "function_signature": "(define-public (delegate-stx (amount-ustx uint) (delegate-to principal) (until-burn-ht (optional uint)) (pool-pox-addr (optional (tuple (hashbytes (buff 32)) (version (buff 1))))) (user-pox-addr (tuple (hashbytes (buff 32)) (version (buff 1)))) (user-metadata (optional (tuple (keys (list 30 (string-ascii 8))) (values (list 30 (string-ascii 80))))))))",
+    "function_args": [
+      {
+        "hex": "0x0100000000000000000000000135f1b400",
+        "repr": "u5200000000",
+        "name": "amount-ustx",
+        "type": "uint"
+      },
+      {
+        "hex": "0x0516099fb88926d82f30b2f40eaf3ee423cb725bdb3b",
+        "repr": "'SP4SZE494VC2YC5JYG7AYFQ44F5Q4PYV7DVMDPBG",
+        "name": "delegate-to",
+        "type": "principal"
+      },
+      {
+        "hex": "0x09",
+        "repr": "none",
+        "name": "until-burn-ht",
+        "type": "(optional uint)"
+      },
+      {
+        "hex": "0x0a0c00000002096861736862797465730200000014cf510f80e8dd49fda0c92cd06557737253004c230776657273696f6e020000000104",
+        "repr": "(some (tuple (hashbytes 0xcf510f80e8dd49fda0c92cd06557737253004c23) (version 0x04)))",
+        "name": "pool-pox-addr",
+        "type": "(optional (tuple (hashbytes (buff 32)) (version (buff 1))))"
+      },
+      {
+        "hex": "0x0c000000020968617368627974657302000000145aa744e0a7d7bcb948dc66e539c77180566dcd5c0776657273696f6e020000000104",
+        "repr": "(tuple (hashbytes 0x5aa744e0a7d7bcb948dc66e539c77180566dcd5c) (version 0x04))",
+        "name": "user-pox-addr",
+        "type": "(tuple (hashbytes (buff 32)) (version (buff 1)))"
+      },
+      {
+        "hex": "0x09",
+        "repr": "none",
+        "name": "user-metadata",
+        "type": "(optional (tuple (keys (list 30 (string-ascii 8))) (values (list 30 (string-ascii 80)))))"
+      }
+    ]
+  }
+}

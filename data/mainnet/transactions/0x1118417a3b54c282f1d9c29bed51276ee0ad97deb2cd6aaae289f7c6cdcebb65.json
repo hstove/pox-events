@@ -1,0 +1,77 @@
+{
+  "tx_id": "0x1118417a3b54c282f1d9c29bed51276ee0ad97deb2cd6aaae289f7c6cdcebb65",
+  "nonce": 241,
+  "fee_rate": "200",
+  "sender_address": "SP24WS3W13JK7W2S1W7XGES386CJ91W783RK140WY",
+  "sponsored": false,
+  "post_condition_mode": "deny",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "block_hash": "0xb5a9503eb37631f17f40aad3f45e7c43fe0ba8c3c30acae501afacf5e2222791",
+  "block_height": 2104570,
+  "block_time": 1751913074,
+  "block_time_iso": "2025-07-07T18:31:14.000Z",
+  "burn_block_time": 1751913033,
+  "burn_block_height": 904485,
+  "burn_block_time_iso": "2025-07-07T18:30:33.000Z",
+  "parent_burn_block_time": 1751913033,
+  "parent_burn_block_time_iso": "2025-07-07T18:30:33.000Z",
+  "canonical": true,
+  "tx_index": 1,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x070c000000030b6c6f636b2d616d6f756e74010000000000000000000000051f3e19c007737461636b6572051689cc8f811ca67e0b21e1fb076468332490f0e81e12756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000dd91e",
+    "repr": "(ok (tuple (lock-amount u21999000000) (stacker 'SP24WS3W13JK7W2S1W7XGES386CJ91W783RK140WY) (unlock-burn-height u907550)))"
+  },
+  "event_count": 2,
+  "parent_block_hash": "0x1409710c1f4b39cb93f4dd1c5b57e601644b2b9bcf72f0cee5c71d44211f6f7e",
+  "is_unanchored": false,
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "execution_cost_read_count": 73,
+  "execution_cost_read_length": 330164,
+  "execution_cost_runtime": 785288,
+  "execution_cost_write_count": 5,
+  "execution_cost_write_length": 523,
+  "vm_error": null,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x1118417a3b54c282f1d9c29bed51276ee0ad97deb2cd6aaae289f7c6cdcebb65",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e63650100000000000000000000000000230fbb176275726e636861696e2d756e6c6f636b2d68656967687401000000000000000000000000000dd0ea04646174610c000000070964656c656761746f72061683ed66860315e334010bbfb76eb3eef887efee0a11706f78342d666173742d706f6f6c2d76330c656e642d6379636c652d69640a01000000000000000000000000000000730c657874656e642d636f756e74010000000000000000000000000000000108706f782d616464720c0000000209686173686279746573020000001483ed66860315e334010bbfb76eb3eef887efee0a0776657273696f6e02000000010407737461636b6572051689cc8f811ca67e0b21e1fb076468332490f0e81e0e73746172742d6379636c652d6964010000000000000000000000000000007212756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000dd91e066c6f636b6564010000000000000000000000051f3e19c0046e616d650d0000001564656c65676174652d737461636b2d657874656e6407737461636b6572051689cc8f811ca67e0b21e1fb076468332490f0e81e",
+          "repr": "(ok (tuple (balance u2297787) (burnchain-unlock-height u905450) (data (tuple (delegator 'SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3) (end-cycle-id (some u115)) (extend-count u1) (pox-addr (tuple (hashbytes 0x83ed66860315e334010bbfb76eb3eef887efee0a) (version 0x04))) (stacker 'SP24WS3W13JK7W2S1W7XGES386CJ91W783RK140WY) (start-cycle-id u114) (unlock-burn-height u907550))) (locked u21999000000) (name \"delegate-stack-extend\") (stacker 'SP24WS3W13JK7W2S1W7XGES386CJ91W783RK140WY)))"
+        }
+      }
+    },
+    {
+      "event_index": 1,
+      "event_type": "stx_lock",
+      "tx_id": "0x1118417a3b54c282f1d9c29bed51276ee0ad97deb2cd6aaae289f7c6cdcebb65",
+      "stx_lock_event": {
+        "locked_amount": "21999000000",
+        "unlock_height": 907550,
+        "locked_address": "SP24WS3W13JK7W2S1W7XGES386CJ91W783RK140WY"
+      }
+    }
+  ],
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP21YTSM60CAY6D011EZVEVNKXVW8FVZE198XEFFP.pox4-fast-pool-v3",
+    "function_name": "delegate-stack-stx",
+    "function_signature": "(define-public (delegate-stack-stx (user principal)))",
+    "function_args": [
+      {
+        "hex": "0x051689cc8f811ca67e0b21e1fb076468332490f0e81e",
+        "repr": "'SP24WS3W13JK7W2S1W7XGES386CJ91W783RK140WY",
+        "name": "user",
+        "type": "principal"
+      }
+    ]
+  }
+}

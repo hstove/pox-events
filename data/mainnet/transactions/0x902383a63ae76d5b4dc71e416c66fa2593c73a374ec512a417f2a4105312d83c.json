@@ -1,0 +1,83 @@
+{
+  "tx_id": "0x902383a63ae76d5b4dc71e416c66fa2593c73a374ec512a417f2a4105312d83c",
+  "nonce": 295,
+  "fee_rate": "100000",
+  "sender_address": "SP249RRK1HD531X0ZSMWYKKP4T94YBQT1NSYVFWPQ",
+  "sponsored": false,
+  "post_condition_mode": "deny",
+  "post_conditions": [],
+  "anchor_mode": "any",
+  "block_hash": "0x264447cc451f92be7a88d5777be7c577aae7b34fab959da48f3db922f0e26aa8",
+  "block_height": 2279212,
+  "block_time": 1753353853,
+  "block_time_iso": "2025-07-24T10:44:13.000Z",
+  "burn_block_time": 1753353710,
+  "burn_block_height": 906951,
+  "burn_block_time_iso": "2025-07-24T10:41:50.000Z",
+  "parent_burn_block_time": 1753353710,
+  "parent_burn_block_time_iso": "2025-07-24T10:41:50.000Z",
+  "canonical": true,
+  "tx_index": 13,
+  "tx_status": "success",
+  "tx_result": {
+    "hex": "0x070c0000000207737461636b6572051650e92015e6f63dcc67b17a7f1eb6eb62af5b51fb12756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000de152",
+    "repr": "(ok (tuple (stacker 'SP18EJ80NWVV3VK37P5X7Y7NPXDHAYPTHZFRZ9X9V) (unlock-burn-height u909650)))"
+  },
+  "event_count": 2,
+  "parent_block_hash": "0xc61dca1080de587b416aa758d60ca5afe15c7d13523b569d41bf65ee61e45685",
+  "is_unanchored": false,
+  "microblock_hash": "0x",
+  "microblock_sequence": 2147483647,
+  "microblock_canonical": true,
+  "execution_cost_read_count": 37,
+  "execution_cost_read_length": 85415,
+  "execution_cost_runtime": 409941,
+  "execution_cost_write_count": 4,
+  "execution_cost_write_length": 423,
+  "vm_error": null,
+  "events": [
+    {
+      "event_index": 0,
+      "event_type": "smart_contract_log",
+      "tx_id": "0x902383a63ae76d5b4dc71e416c66fa2593c73a374ec512a417f2a4105312d83c",
+      "contract_log": {
+        "contract_id": "SP000000000000000000002Q6VF78.pox-4",
+        "topic": "print",
+        "value": {
+          "hex": "0x070c000000060762616c616e63650100000000000000000000000000bf626a176275726e636861696e2d756e6c6f636b2d68656967687401000000000000000000000000000dd91e04646174610c000000070964656c656761746f720616889c62618b4a30f41fcd39e9cec4d249e5df41ae0b636f6e7472696275746f720c656e642d6379636c652d69640a01000000000000000000000000000000740c657874656e642d636f756e74010000000000000000000000000000000108706f782d616464720c000000020968617368627974657302000000146408bf89b8038c618c4ad6e03d0d33cf6581c9780776657273696f6e02000000010407737461636b6572051650e92015e6f63dcc67b17a7f1eb6eb62af5b51fb0e73746172742d6379636c652d6964010000000000000000000000000000007312756e6c6f636b2d6275726e2d68656967687401000000000000000000000000000de152066c6f636b656401000000000000000000000000000f4240046e616d650d0000001564656c65676174652d737461636b2d657874656e6407737461636b6572051650e92015e6f63dcc67b17a7f1eb6eb62af5b51fb",
+          "repr": "(ok (tuple (balance u12542570) (burnchain-unlock-height u907550) (data (tuple (delegator 'SP249RRK1HD531X0ZSMWYKKP4T94YBQT1NSYVFWPQ.contributor) (end-cycle-id (some u116)) (extend-count u1) (pox-addr (tuple (hashbytes 0x6408bf89b8038c618c4ad6e03d0d33cf6581c978) (version 0x04))) (stacker 'SP18EJ80NWVV3VK37P5X7Y7NPXDHAYPTHZFRZ9X9V) (start-cycle-id u115) (unlock-burn-height u909650))) (locked u1000000) (name \"delegate-stack-extend\") (stacker 'SP18EJ80NWVV3VK37P5X7Y7NPXDHAYPTHZFRZ9X9V)))"
+        }
+      }
+    },
+    {
+      "event_index": 1,
+      "event_type": "stx_lock",
+      "tx_id": "0x902383a63ae76d5b4dc71e416c66fa2593c73a374ec512a417f2a4105312d83c",
+      "stx_lock_event": {
+        "locked_amount": "1000000",
+        "unlock_height": 909650,
+        "locked_address": "SP18EJ80NWVV3VK37P5X7Y7NPXDHAYPTHZFRZ9X9V"
+      }
+    }
+  ],
+  "tx_type": "contract_call",
+  "contract_call": {
+    "contract_id": "SP249RRK1HD531X0ZSMWYKKP4T94YBQT1NSYVFWPQ.contributor",
+    "function_name": "admin-stack-extend",
+    "function_signature": "(define-public (admin-stack-extend (stacker principal) (extend-count uint)))",
+    "function_args": [
+      {
+        "hex": "0x051650e92015e6f63dcc67b17a7f1eb6eb62af5b51fb",
+        "repr": "'SP18EJ80NWVV3VK37P5X7Y7NPXDHAYPTHZFRZ9X9V",
+        "name": "stacker",
+        "type": "principal"
+      },
+      {
+        "hex": "0x0100000000000000000000000000000001",
+        "repr": "u1",
+        "name": "extend-count",
+        "type": "uint"
+      }
+    ]
+  }
+}
