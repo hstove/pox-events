@@ -1,48 +1,49 @@
 latitude,longitude,Country Code,Country,City,IP Address
-38.9071,-77.0368,US,United States,Washington,34.86.98.243
-29.9353,-90.074,US,United States,New Orleans,69.2.42.123
-39.0438,-77.4874,US,United States,Ashburn,44.198.75.17
-53.3498,-6.26031,IE,Ireland,Dublin,3.248.198.111
-50.1169,8.6837,DE,Germany,Frankfurt am Main,185.254.97.213
-39.0438,-77.4874,US,United States,Ashburn,54.196.32.74
-52.3676,4.90414,NL,The Netherlands,Amsterdam,88.211.220.204
+53.3498,-6.2603,IE,Ireland,Dublin,141.98.217.166
+53.3498,-6.26031,IE,Ireland,Dublin,54.74.15.78
+50.4777,12.3649,DE,Germany,Falkenstein,162.55.166.92
+50.7012,3.21501,FR,France,Wattrelos,162.19.37.247
+40.5511,-74.4606,US,United States,Piscataway,104.243.41.215
 48.2049,16.3662,AT,Austria,Vienna,185.119.116.238
-48.5734,7.75211,FR,France,Strasbourg,91.134.40.135
-50.9871,2.12554,FR,France,Gravelines,91.134.53.221
+51.5123,-0.0909,GB,United Kingdom,London,67.209.52.73
+48.8558,2.3494,FR,France,Paris,79.127.215.171
 34.0609,-118.2414,US,United States,Los Angeles,172.96.160.168
-38.9071,-77.0368,US,United States,Washington,35.230.160.219
+34.0609,-118.2414,US,United States,Los Angeles,172.96.141.52
+51.4808,0.174675,GB,United Kingdom,Erith,57.129.140.115
+40.5511,-74.4606,US,United States,Piscataway,104.194.11.239
+50.1109,8.68213,DE,Germany,Frankfurt am Main,3.122.176.89
+39.0438,-77.4874,US,United States,Ashburn,54.196.32.74
+48.5734,7.75211,FR,France,Strasbourg,91.134.40.135
+50.7012,3.21501,FR,France,Wattrelos,217.182.95.183
+51.5081,-0.1278,GB,United Kingdom,London,198.244.179.99
+48.5734,7.75211,FR,France,Strasbourg,162.19.103.62
+53.3498,-6.26031,IE,Ireland,Dublin,3.248.198.111
+38.9071,-77.0368,US,United States,Washington,34.86.98.243
+50.1109,8.6821,DE,Germany,Frankfurt,64.130.50.252
+38.9071,-77.0368,US,United States,Washington,34.150.184.50
+48.5734,7.75211,FR,France,Strasbourg,162.19.43.6
+50.1169,8.6837,DE,Germany,Frankfurt am Main,45.157.233.110
+52.3676,4.90414,NL,The Netherlands,Amsterdam,23.109.63.172
+50.9871,2.12554,FR,France,Gravelines,91.134.53.221
+39.0438,-77.4874,US,United States,Ashburn,44.198.75.17
+50.1162,8.6693,DE,Germany,Frankfurt am Main,57.129.76.56
+1.28009,103.851,SG,Singapore,Singapore,52.77.118.154
+50.9871,2.12554,FR,France,Gravelines,217.182.88.62
+40.0992,-83.1141,US,United States,Dublin,3.131.66.186
+51.4808,0.174675,GB,United Kingdom,Erith,57.128.187.216
+50.1169,8.6837,DE,Germany,Frankfurt am Main,8.211.31.219
+50.1162,8.6693,DE,Germany,Frankfurt am Main,57.129.86.31
+41.0446,-73.9592,US,United States,Orangeburg,89.117.78.187
+50.7012,3.21501,FR,France,Wattrelos,141.94.3.10
+32.8771,-80.013,US,United States,North Charleston,35.185.91.239
+50.1109,8.68213,DE,Germany,Frankfurt am Main,52.58.243.225
 39.0438,-77.4874,US,United States,Ashburn,54.80.131.114
 51.4808,0.174675,GB,United Kingdom,Erith,57.128.187.18
-32.8771,-80.013,US,United States,North Charleston,35.185.91.239
-34.0609,-118.2414,US,United States,Los Angeles,172.96.141.52
-53.3498,-6.2603,IE,Ireland,Dublin,141.98.217.166
-40.0992,-83.1141,US,United States,Dublin,3.131.66.186
-51.5123,-0.0909,GB,United Kingdom,London,67.209.52.73
-1.28009,103.851,SG,Singapore,Singapore,52.77.118.154
-53.3498,-6.26031,IE,Ireland,Dublin,54.74.15.78
-49.4423,11.0191,DE,Germany,Nuremberg,152.53.22.28
-51.4808,0.174675,GB,United Kingdom,Erith,57.129.140.115
-48.8558,2.3494,FR,France,Paris,79.127.215.171
-38.9071,-77.0368,US,United States,Washington,34.150.184.50
-51.4808,0.174675,GB,United Kingdom,Erith,57.128.187.216
-50.1109,8.6821,DE,Germany,Frankfurt,64.130.50.252
-50.4777,12.3649,DE,Germany,Falkenstein,162.55.166.92
-53.3498,-6.2603,IE,Ireland,Dublin,202.8.10.85
-40.5511,-74.4606,US,United States,Piscataway,104.194.11.239
-48.5734,7.75211,FR,France,Strasbourg,162.19.103.62
-52.3676,4.90414,NL,The Netherlands,Amsterdam,23.109.63.172
-41.0446,-73.9592,US,United States,Orangeburg,89.117.78.187
+38.9071,-77.0368,US,United States,Washington,35.230.160.219
 50.3986,8.07958,DE,Germany,Limburg an der Lahn,141.95.124.216
-50.7012,3.21501,FR,France,Wattrelos,162.19.37.247
-50.1109,8.68213,DE,Germany,Frankfurt am Main,3.122.176.89
-50.1109,8.68213,DE,Germany,Frankfurt am Main,52.58.243.225
-50.1162,8.6693,DE,Germany,Frankfurt am Main,57.129.86.31
-41.2619,-95.8608,US,United States,Council Bluffs,34.72.119.10
-50.1169,8.6837,DE,Germany,Frankfurt am Main,8.211.31.219
-50.9871,2.12554,FR,France,Gravelines,217.182.88.62
-50.7012,3.21501,FR,France,Wattrelos,217.182.95.183
+29.9353,-90.074,US,United States,New Orleans,69.2.42.123
+52.3676,4.90414,NL,The Netherlands,Amsterdam,88.211.220.204
 34.0609,-118.2414,US,United States,Los Angeles,172.96.141.17
-50.1162,8.6693,DE,Germany,Frankfurt am Main,57.129.76.56
-40.5511,-74.4606,US,United States,Piscataway,104.243.41.215
-48.5734,7.75211,FR,France,Strasbourg,162.19.43.6
-50.7012,3.21501,FR,France,Wattrelos,141.94.3.10
+49.4423,11.0191,DE,Germany,Nuremberg,152.53.22.28
+41.2619,-95.8608,US,United States,Council Bluffs,34.72.119.10
+53.3498,-6.2603,IE,Ireland,Dublin,202.8.10.85
