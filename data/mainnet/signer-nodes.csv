@@ -1,8 +1,10 @@
 latitude,longitude,Country Code,Country,City,IP Address
-50.1109,8.68213,DE,Germany,Frankfurt am Main,3.122.176.89
-50.9871,2.12554,FR,France,Gravelines,91.134.53.221
-1.28009,103.851,SG,Singapore,Singapore,52.77.118.154
 50.1169,8.6837,DE,Germany,Frankfurt am Main,8.211.31.219
 38.9071,-77.0368,US,United States,Washington,34.150.184.50
-38.9071,-77.0368,US,United States,Washington,35.230.160.219
+50.1109,8.68213,DE,Germany,Frankfurt am Main,3.122.176.89
+1.28009,103.851,SG,Singapore,Singapore,52.77.118.154
+50.9871,2.12554,FR,France,Gravelines,91.134.53.221
+51.5081,-0.1278,GB,United Kingdom,London,198.244.203.67
 50.1109,8.68213,DE,Germany,Frankfurt am Main,52.58.243.225
+38.9071,-77.0368,US,United States,Washington,35.230.160.219
+51.5081,-0.1278,GB,United Kingdom,London,198.244.253.60
